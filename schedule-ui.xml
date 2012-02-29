@@ -181,12 +181,13 @@
 	<buttonlist name="timelist">
 	    <area>654,98,-30,30</area>
 	    <layout>horizontal</layout>
-	    <arrange>spread</arrange>
+	    <arrange>stack</arrange>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
 		<area>0,0,50%,30</area>
 		<state name="active">
+		    <area>0,0,100%,100%</area>
 		    <shape name="timebg">
 			<area>0,0,100%,30</area>
 			<type>roundbox</type>
@@ -550,7 +551,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>300,75,-300,-200</area>
+	    <area>50%-660,75,1320,-200</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
