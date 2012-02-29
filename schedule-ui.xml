@@ -23,7 +23,7 @@
 
 	<buttonlist name="channellist">
 	    <arrange>spread</arrange>
-	    <area>520,130,195,864</area>
+	    <area>460,130,195,864</area>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
@@ -55,28 +55,29 @@
 	</buttonlist>
 
 	<textarea name="datetext">
-	    <area>535,89,180,42</area>
+	    <area>460,89,195,42</area>
 	    <font>mymediumnarrow</font>
 	    <align>center</align>
 	</textarea>
 
 	<buttonlist name="timelist">
-	    <area>725,98,1168,30</area>
+	    <area>654,98,-30,30</area>
 	    <layout>horizontal</layout>
-	    <arrange>spread</arrange>
+	    <arrange>stack</arrange>
 	    <buttonarea>0,0,100%,100%</buttonarea>
-	    <spacing>1</spacing>
+	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,291,30</area>
+		<area>0,0,50%,30</area>
 		<state name="active">
+		    <area>0,0,100%,100%</area>
 		    <shape name="timebg">
-			<area>0,0,291,30</area>
+			<area>0,0,100%,30</area>
 			<type>roundbox</type>
 			<cornerradius>30</cornerradius>
 			<fill color="#FFFFFF" alpha="60" />
 		    </shape>
 		    <textarea name="buttontext" from="basetextarea">
-			<area>10,3,280,30</area>
+			<area>10,3,-10,-3</area>
 			<font>mysmall</font>
 			<align>center</align>
 		    </textarea>
@@ -87,15 +88,15 @@
 	</buttonlist>
 
 	<shape name="background">
-	    <area>725,128,1168,864</area>
+	    <area>655,128,-30,864</area>
 	    <type>box</type>
 	    <fill color="#000000" alpha="255" />
 	</shape>
 	<guidegrid name="guidegrid">
-	    <area>725,128,1168,864</area>
+	    <area>655,128,-30,864</area>
 	    <layout>horizontal</layout>
 	    <channels>9</channels>
-	    <timeslots>4</timeslots>
+	    <timeslots>2</timeslots>
 	    <solidcolor>#003256</solidcolor>
 	    <selector type="box" linecolor="#bcbcbc" ></selector>
 	    <showcategories>yes</showcategories>
@@ -135,12 +136,12 @@
 	</group>
 
 	<group name="progdetails" from="guideprogdetails">
-	    <area>40,35,460,765</area>
+	    <area>35,35,410,765</area>
 	</group>
 
 	<buttonlist name="channellist">
 	    <arrange>spread</arrange>
-	    <area>520,130,195,864</area>
+	    <area>460,130,195,864</area>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
@@ -172,28 +173,28 @@
 	</buttonlist>
 
 	<textarea name="datetext">
-	    <area>535,89,180,42</area>
+	    <area>460,89,195,42</area>
 	    <font>mymediumnarrow</font>
 	    <align>center</align>
 	</textarea>
 
 	<buttonlist name="timelist">
-	    <area>725,98,1168,30</area>
+	    <area>654,98,-30,30</area>
 	    <layout>horizontal</layout>
 	    <arrange>spread</arrange>
 	    <buttonarea>0,0,100%,100%</buttonarea>
-	    <spacing>1</spacing>
+	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,291,30</area>
+		<area>0,0,50%,30</area>
 		<state name="active">
 		    <shape name="timebg">
-			<area>0,0,291,30</area>
+			<area>0,0,100%,30</area>
 			<type>roundbox</type>
 			<cornerradius>30</cornerradius>
 			<fill color="#FFFFFF" alpha="60" />
 		    </shape>
 		    <textarea name="buttontext" from="basetextarea">
-			<area>10,3,280,30</area>
+			<area>10,3,-10,-3</area>
 			<font>mysmall</font>
 			<align>center</align>
 		    </textarea>
@@ -204,15 +205,15 @@
 	</buttonlist>
 
 	<shape name="background">
-	    <area>725,128,1168,864</area>
+	    <area>655,128,-30,864</area>
 	    <type>box</type>
 	    <fill color="#000000" alpha="255" />
 	</shape>
 	<guidegrid name="guidegrid">
-	    <area>725,128,1168,864</area>
+	    <area>655,128,-30,864</area>
 	    <layout>horizontal</layout>
 	    <channels>9</channels>
-	    <timeslots>4</timeslots>
+	    <timeslots>2</timeslots>
 	    <solidcolor>#003256</solidcolor>
 	    <selector type="box" linecolor="#bcbcbc" ></selector>
 	    <showcategories>yes</showcategories>
@@ -236,18 +237,21 @@
 	</guidegrid>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
-	    
+	    <area>35,100%-340,410,240</area>
+	    <minsize vanish="yes">100%,100%</minsize>
+
 	    <shape name="previewShape">
 		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
 		<type>roundbox</type>
 		<cornerradius>5</cornerradius>
 		<fill color="#555555" alpha="255" />
 		<line color="#FFFFFF" alpha="160" width="8" />
 	    </shape>
-	    
+
 	    <imagetype name="video">
-                <area>59,813,412,230</area>
+		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
 		<preserveaspect>true</preserveaspect>
 	    </imagetype>
 	</group>

@@ -355,10 +355,10 @@
     </group>
 
     <group name="basePageHeading">
-        <area>500,1010,-30,50</area>
+        <area>30,1010,-30,50</area>
 
 	<shape name="connectBar">
-	    <area>460,11,-10,-10</area>
+	    <area>10,11,-10,-10</area>
 	    <type>box</type>
 	    <line color="#000000" alpha="255" width="4" />
 	</shape>
@@ -378,7 +378,7 @@
 	    <textarea name="text">
 		<area>25,5,-25,-5</area>
 		<minsize>50,100%</minsize>
-		<align>center</align>
+		<align>left,vcenter</align>
 		<font>mymediumlightgrey</font>
 		<cutdown>no</cutdown>
 	    </textarea>
@@ -1375,7 +1375,7 @@
     </statetype>
 
     <group name="baseMsgGroup">
-	<area>45,975,440,85</area>
+	<area>35,100%-185,398,85</area>
 	<!--
 	    <minsize vanish="true">100%,100%</minsize>
 	-->
@@ -1408,24 +1408,21 @@
     </group>
 
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
-	<area>52,809,426,240</area>
+	<area>41,100%-334,398,228</area>
     </group>
 
     <group name="baseMsgGroupTall" from="baseMsgGroup">
-	<!--
-	    <area>52,650,426,400</area>
-	-->
-        <area>45,702,440,338</area>
+        <area>41,100%-438,398,338</area>
     </group>
 
     <group name="baseMsgGroupWide" from="baseMsgGroup">
-	<area>52,809,500,240</area>
+	<area>35,100%-340,500,240</area>
     </group>
 
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
-	<area>570,25,1300,60</area>
+	<area>560,25,-25,60</area>
 	<minsize vanish="yes">20,100%</minsize>
 
 	<shape name="modeShape">
@@ -1539,7 +1536,7 @@
     <buttonlist name="groupsList">
 	<arrange>stack</arrange>
 	<align>bottom,left</align>
-	<area>35,0,460,800</area>
+	<area>30,0,420,-350</area>
 	<buttonarea>20,0,-20,100%</buttonarea>
 	<scrollstyle>center</scrollstyle>
 	<wrapstyle>items</wrapstyle>
@@ -1625,10 +1622,10 @@
     </buttonlist>
 
     <group name="guideprogdetails">
-	<area>40,35,460,959</area>
+	<area>35,35,410,959</area>
 
 	<group name="titlegroup" from="baseMsgGroup">
-	    <area>0,0,460,130</area>
+	    <area>0,0,100%,130</area>
 
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
@@ -1639,7 +1636,7 @@
 	</group>
 
 	<group name="subtitlegroup" from="baseMsgGroup">
-	    <area>0,135,460,115</area>
+	    <area>0,135,100%,115</area>
 
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
@@ -1650,7 +1647,7 @@
 	</group>
 
 	<group name="wheregroup" from="baseMsgGroup">
-	    <area>0,255,460,125</area>
+	    <area>0,255,100%,125</area>
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
 	    </shape>
@@ -1678,7 +1675,7 @@
 	</group>
 
 	<group name="descgroup" from="baseMsgGroup">
-	    <area>0,385,460,100%</area>
+	    <area>0,385,100%,100%</area>
 	    
 	    <shape name="msgShape">
 		<line color="#00FFFF" alpha="160" width="0" />
@@ -1739,45 +1736,55 @@
 	<area>0,0,100%,100%</area>
 
 	<textarea name="timedate">
-	    <area>0,0,530,36</area>
+	    <area>165,0,530,36</area>
 	    <align>left,vcenter</align>
 	    <font>mysmallsansgrey</font>
 	    <cutdown>no</cutdown>
 	</textarea>
 	
-	<textarea name="originalairdate">
-	    <area>520,0,230,35</area>
-	    <align>center</align>
-	    <font>mysmallnarrowgrey</font>
-	    <template>(%1)</template>
-	    <cutdown>no</cutdown>
-	</textarea>
-
-	<textarea name="year">
-	    <area>520,0,230,35</area>
-	    <align>center</align>
-	    <font>mysmallnarrowgrey</font>
-	    <template>(%1)</template>
-	</textarea>
-	
 	<textarea name="lenmins">
-	    <area>750,0,150,35</area>
+	    <area>100%-150,0,100%,35</area>
 	    <align>right,vcenter</align>
 	    <font>mysmallnarrowgrey</font>
 	    <template>%1</template>
 	</textarea>
 
 	<textarea name="channel">
-	    <area>910,0,-15,40</area>
+	    <area>0,35,240,35</area>
+	    <font>mysmallnarrowgrey</font>
+	    <align>left,vcenter</align>
+	</textarea>
+
+	<textarea name="originalairdate">
+	    <area>250,35,-260,35</area>
+	    <align>left</align>
+	    <font>mysmallnarrowgrey</font>
+	    <template>(%1)</template>
+	    <cutdown>no</cutdown>
+	</textarea>
+
+	<textarea name="year">
+	    <area>250,35,-260,35</area>
+	    <align>center</align>
+	    <font>mysmallnarrowgrey</font>
+	    <template>(%1)</template>
+	</textarea>
+	
+	<textarea name="filesize_str">
+	    <area>100%-125,35,100%,35</area>
 	    <font>mysmallnarrowgrey</font>
 	    <align>right,vcenter</align>
+	</textarea>
+
+	<textarea name="s00e00" from="filesize_str">
+	    <area>100%-255,35,125,35</area>
 	</textarea>
     </group>
 
     <buttonlist name="itemsList">
 	<arrange>stack</arrange>
 	<align>bottom,left</align>
-	<area>535,130,-30,-100</area>
+	<area>480,130,-30,-100</area>
 	<buttonarea>25,0,100%,100%</buttonarea>
 	<wrapstyle>selection</wrapstyle>
 	<spacing>0</spacing>
@@ -1819,7 +1826,7 @@
 	<statetype name="buttonitem">
 	    <area>0,0,100%,100%</area>
 	    <state name="inactive">
-		<area>0,0,100%,85</area>
+		<area>0,0,100%,120</area>
 		
 		<statetype name="status">
 		    <area>0,0,100%,100%</area>
@@ -1897,7 +1904,7 @@
 		</statetype>
 
 		<group name="progstats" from="programStats">
-		    <area>165,4,100%,40</area>
+		    <area>20,4,-20,70</area>
 		</group>
 
 		<textarea name="titlesubtitle">
@@ -1913,7 +1920,7 @@
 		<area>0,0,100%,340</area>
 
 		<group name="progstats" from="programStats">
-		    <area>165,10,100%,40</area>
+		    <area>20,10,-20,70</area>
 		</group>
 
 		<textarea name="titlesubtitle">
@@ -1921,14 +1928,14 @@
 		</textarea>
 
 		<textarea name="title">
-		    <area>20,45,-15,65</area>
+		    <area>20,80,-15,65</area>
 		    <align>left</align>
 		    <font>mylargebold</font>
 		    <cutdown>no</cutdown>
 		    <scroll direction="horizontal" />
 		</textarea>
 		<textarea name="subtitle">
-		    <area>60,88,-15,55</area>
+		    <area>60,123,-15,55</area>
 		    <align>left</align>
 		    <font>mymediumbold</font>
 		    <cutdown>no</cutdown>
@@ -1937,7 +1944,7 @@
 
 		<textarea name="description">
 		    <align>left</align>
-		    <area>25,125,-25,-55</area>
+		    <area>25,160,-25,-55</area>
 		    <font>mysmall</font>
 		    <multiline>yes</multiline>
 		    <cutdown>yes</cutdown>
@@ -1953,14 +1960,14 @@
 		</statetype>
 
 		<textarea name="title">
-		    <position>20,50</position>
+		    <position>20,80</position>
 		</textarea>
 		<textarea name="subtitle">
-		    <position>60,88</position>
+		    <position>60,123</position>
 		</textarea>
 
 		<textarea name="description">
-		    <area>25,125,100%,-45</area>
+		    <area>25,160,100%,-45</area>
 		</textarea>
 	    </state>
 	</statetype>

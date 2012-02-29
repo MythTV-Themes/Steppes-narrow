@@ -71,34 +71,49 @@
 	</group>
 
         <shape name="preview-shape">
+<!--
             <area>60,40,1320,760</area>
+-->
+            <area>60,40,680,520</area>
             <type>roundbox</type>
             <fill color="#000000" />
             <cornerradius>20</cornerradius>
         </shape>
 
         <imagetype name="preview">
+	    <area>80,60,640,480</area>
+<!--
             <area>80,60,1280,720</area>
+-->
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="name" from="basetextarea">
+	    <area>60,570,680,55</area>
+<!--
             <area>80,810,1000,55</area>
+-->
             <font>mylarge</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="resolution" from="basetextarea">
+	    <area>60,660,200,55</area>
+<!--
             <area>1100,810,200,55</area>
+-->
             <font>mysmall</font>
             <align>right,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
+	    <area>300,660,80,55</area>
+<!--
             <area>1300,810,80,55</area>
+-->
             <multiline>no</multiline>
             <font>mysmall</font>
             <align>right,vcenter</align>
@@ -106,7 +121,10 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
+	    <area>70,725,680,-110</area>
+<!--
             <area>80,875,1260,-70</area>
+-->
             <multiline>yes</multiline>
             <font>mysmall</font>
             <align>left,top</align>
@@ -114,7 +132,10 @@
         </textarea>
 
 	<buttonlist name="themes">
+	    <area>800,40,-45,-100</area>
+<!--
             <area>1390,40,-45,-100</area>
+-->
 	    <arrange>stack</arrange>
 	    <align>left,vcenter</align>
 	    <buttonarea>25,0,100%,100%</buttonarea>
@@ -209,7 +230,7 @@
 
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>130,100%-55</position>
+            <position>75,100%-100</position>
         </progressbar>
 
         <statetype name="fullpreviewstate">

@@ -104,10 +104,12 @@
 
 		    <statetype name="playlist" from="selectedbox" />
 
-		    <textarea name="titlesubtitle">
+		    <textarea name="titlesubtitle" />
+<!--
 			<area>20,100%-41,-280,35</area>
 		    </textarea>
-
+-->
+<!--
 		    <textarea name="filesize_str">
 			<area>100%-145,100%-41,-20,35</area>
 			<font>mysmallgrey</font>
@@ -117,6 +119,7 @@
 		    <textarea name="s00e00" from="filesize_str">
 			<area>100%-275,100%-41,125,35</area>
 		    </textarea>
+-->
 		</state>
 
 		<state name="active" from="inactive" />
@@ -124,6 +127,7 @@
 		<state name="selectedinactive">
 		    <area>0,0,100%,340</area>
 
+<!--
 		    <textarea name="filesize_str">
 			<area>1080,100%-41,-20,40</area>
 			<font>mysmallgrey</font>
@@ -133,7 +137,7 @@
 		    <textarea name="s00e00" from="filesize_str">
 			<area>950,100%-41,225,40</area>
 		    </textarea>
-
+-->
 		    <shape name="stateshape">
 			<area>40,100%-49,494,37</area> 
 			<type>roundbox</type>
@@ -384,7 +388,7 @@
 	</group>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
