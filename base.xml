@@ -25,7 +25,7 @@
     <!--  Sans  -->
 
     <fontdef name="mysmallsans" from="basesans">
-	<pixelsize>28</pixelsize>
+	<pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallsansgrey" from="mysmallsans">
@@ -1422,7 +1422,7 @@
 
     <!-- Common page elements -->
     <group name="baseModeGroup">
-	<area>560,25,-25,60</area>
+	<area>500,25,-25,60</area>
 	<minsize vanish="yes">20,100%</minsize>
 
 	<shape name="modeShape">

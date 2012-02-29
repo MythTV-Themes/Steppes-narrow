@@ -386,6 +386,11 @@
 	<buttonlist name="schedules" from="episodeList">
 	    <statetype name="buttonitem">
 		<state name="active">
+		    <group name="progstats">
+			<textarea name="filesize_str">
+			    <area>0,0,0,0</area>
+			</textarea>
+		    </group>
 		    <textarea name="card">
 			<area>30,6,60,35</area>
 			<font>mysmallgrey</font>
@@ -402,6 +407,11 @@
 		<state name="inactive" from="active" />
 
 		<state name="selectedinactive">
+		    <group name="progstats">
+			<textarea name="filesize_str">
+			    <area>0,0,0,0</area>
+			</textarea>
+		    </group>
 		    <textarea name="rectypestatus">
 			<area>100%-700,100%-41,-20,-8</area>
 			<align>right</align>
@@ -790,6 +800,11 @@
 	<buttonlist name="proglist" from="episodeList">
 	    <statetype name="buttonitem">
 		<state name="active">
+		    <group name="progstats">
+			<textarea name="filesize_str">
+			    <area>0,0,0,0</area>
+			</textarea>
+		    </group>
 		    <textarea name="card">
 			<area>40,6,60,35</area>
 			<font>mysmallgrey</font>
@@ -806,6 +821,11 @@
 		<state name="inactive" from="active" />
 
 		<state name="selectedinactive">
+		    <group name="progstats">
+			<textarea name="filesize_str">
+			    <area>0,0,0,0</area>
+			</textarea>
+		    </group>
 		    <textarea name="rectypestatus">
 			<area>100%-700,100%-41,-20,-8</area>
 			<align>right</align>
