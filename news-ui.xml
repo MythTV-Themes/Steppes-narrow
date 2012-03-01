@@ -17,14 +17,14 @@
 
 	<buttonlist name="siteslist" from="groupsList">
 	    <align>vcenter,left</align>
-	    <area>40,5,1300,700</area>
+	    <area>40,5,955,700</area>
 	    <buttonarea>25,0,100%,100%</buttonarea>
 
 	    <statetype name="buttonitem">
-		<area>0,0,1300,700</area>
+		<area>0,0,100%,700</area>
 
 		<state name="inactive">
-		    <area>0,0,460,85</area>
+		    <area>0,0,375,85</area>
 
 		    <shape name="groupBorder">
 			<area>5,0,-5,100%</area>
@@ -62,33 +62,33 @@
 		</state>
 	    </statetype>
 	    <statetype name="upscrollarrow">
-		<position>0,100%-120</position>
+		<area>0,50%-25,20,20</area>
 	    </statetype>
 	    <statetype name="downscrollarrow">
-		<position>0,100%-90</position>
+		<area>0,50%+5,20,20</area>
 	    </statetype>
 	</buttonlist>
 
 	<buttonlist name="articleslist" from="siteslist">
-	    <area>555,5,1300,700</area>
-	    <buttonarea>0,0,100%-25,100%</buttonarea>
+	    <area>455,5,955,700</area>
+	    <buttonarea>0,0,100%-20,100%</buttonarea>
 	    <scrollstyle>free</scrollstyle>
 
 	    <statetype name="buttonitem">
-		<area>0,0,1300,700</area>
+		<area>0,0,100%,700</area>
 
 		<state name="inactive">
-		    <area>100%-460,0,460,85</area>
+		    <area>100%-375,0,375,85</area>
 		</state>
 		<state name="selectedinactive">
-		    <area>100%-460,0,460,85</area>
+		    <area>100%-375,0,375,85</area>
 		</state>
 	    </statetype>
 	    <statetype name="upscrollarrow">
-		<position>100%,100%-120</position>
+		<area>100%-20,50%-25,20,20</area>
 	    </statetype>
 	    <statetype name="downscrollarrow">
-		<position>100%,100%-90</position>
+		<area>100%-20,50%+5,20,20</area>
 	    </statetype>
 	</buttonlist>
 
@@ -99,47 +99,47 @@
 		<area>0,0,100%,100%</area>
 	    </shape>
 
-        <textarea name="nosites" from="basetextarea">
-            <area>20,20,-20,-20</area>
-            <align>center</align>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="nosites" from="basetextarea">
+		<area>20,20,-20,-20</area>
+		<align>center</align>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>20,5,-20,120</area>
-            <font>mylarge</font>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="title" from="basetextarea">
+		<area>20,5,-20,110</area>
+		<font>mylarge</font>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <imagetype name="thumbnail">
-            <area>100%-200,10,180,120</area>
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
+	    <imagetype name="thumbnail">
+		<area>100%-200,10,180,120</area>
+		<preserveaspect>true</preserveaspect>
+	    </imagetype>
 
-        <textarea name="description" from="basetextarea">
-            <area>30,130,-30,-45</area>
-            <multiline>yes</multiline>
-        </textarea>
+	    <textarea name="description" from="basetextarea">
+		<area>30,120,-30,-45</area>
+		<multiline>yes</multiline>
+	    </textarea>
 
-        <textarea name="updated" from="basetextarea">
-            <area>100%-600,100%-40,-20,35</area>
-	    <align>right,vcenter</align>
-        </textarea>
+	    <textarea name="updated" from="basetextarea">
+		<area>100%-800,100%-40,-20,35</area>
+		<align>right,vcenter</align>
+	    </textarea>
 
-        <imagetype name="enclosures">
-            <filename>enclosures.png</filename>
-            <position>30,100%-40</position>
-        </imagetype>
+	    <imagetype name="enclosures">
+		<filename>enclosures.png</filename>
+		<position>30,100%-40</position>
+	    </imagetype>
 
-        <imagetype name="download">
-            <filename>need-download.png</filename>
-            <position>130,100%-40</position>
-        </imagetype>
+	    <imagetype name="download">
+		<filename>need-download.png</filename>
+		<position>130,100%-40</position>
+	    </imagetype>
 
-        <imagetype name="ispodcast">
-            <filename>podcast.png</filename>
-            <position>230,100%-40</position>
-        </imagetype>
+	    <imagetype name="ispodcast">
+		<filename>podcast.png</filename>
+		<position>230,100%-40</position>
+	    </imagetype>
 	</group>
     </window>
 
@@ -154,7 +154,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>50%-670,120,1240,500</area>
+	    <area>50%-620,120,1240,500</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -218,25 +218,25 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupLarge">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="help" from="msgText">
 		<value>Choose the news sites you would like to read.</value>
 	    </textarea>
 	</group>
 
 	<group name="dialog">
-	    <area>50%-760,50,1520,-300</area>
+	    <area>50%-690,50,1380,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
 	    </shape>
 
 	    <buttonlist name="category" from="basebuttonlist">
-		<area>20,20,600,-20</area>
+		<area>20,20,560,-20</area>
 	    </buttonlist>
 
 	    <buttonlist name="sites" from="basechecklist">
-		<area>680,20,800,-20</area>
+		<area>600,20,-20,-20</area>
 	    </buttonlist>
 <!--
 	    <textarea name="context_switch" from="basetextarea">

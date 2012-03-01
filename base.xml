@@ -897,7 +897,7 @@
 		    <cornerradius>15</cornerradius>
 		</shape>
 		<textarea name="buttontext" from="basewidgettext">
-		    <area>30,10,-30,-10</area>
+		    <area>30,8,-30,-8</area>
 		</textarea>
 	    </state>
 	    <state name="selectedinactive" from="active" />
@@ -1408,11 +1408,11 @@
     </group>
 
     <group name="baseMsgGroupLarge" from="baseMsgGroup">
-	<area>41,100%-334,398,228</area>
+	<area>35,100%-334,398,228</area>
     </group>
 
     <group name="baseMsgGroupTall" from="baseMsgGroup">
-        <area>41,100%-438,398,338</area>
+        <area>35,100%-438,398,338</area>
     </group>
 
     <group name="baseMsgGroupWide" from="baseMsgGroup">

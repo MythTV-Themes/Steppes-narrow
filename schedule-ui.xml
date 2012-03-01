@@ -467,46 +467,46 @@
 	</group>
 
         <buttonlist name="channels" from="itemsList">
-	    <area>35,30,-35,920</area>
+	    <area>35,30,-35,-200</area>
 	    <buttonarea>25,0,100%,100%</buttonarea>
 
             <statetype name="buttonitem">
 		<area>0,0,100%,100%</area>
                 <state name="inactive">
-		    <area>0,0,100%,55</area>
+		    <area>0,0,100%,90</area>
                     <imagetype name="icon">
-                        <area>15,10,60,-10</area>
+                        <area>15,10,100,-10</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
 
                     <textarea name="chanstr" from="basetextarea">
-                        <area>100,10,120,40</area>
+                        <area>120,10,120,35</area>
 			<font>mysmall</font>
                         <align>vcenter,right</align>
                     </textarea>
 
                     <textarea name="callsign" from="chanstr">
-                        <area>220,10,240,40</area>
+                        <area>240,10,240,35</area>
 			<align>center</align>
                     </textarea>
 
                     <textarea name="channelname" from="callsign">
-                        <area>470,10,700,40</area>
+                        <area>490,10,-20,35</area>
 			<value>name</value>
                     </textarea>
 
 		    <textarea name="channelsourcename" from="callsign">
-			<area>1180,10,290,40</area>
+			<area>120,100%-40,360,35</area>
 		    </textarea>
 
 		    <textarea name="recprioritylabel" from="callsign">
-			<area>1480,10,280,40</area>
+			<area>100%-350,100%-40,280,35</area>
 			<align>right,vcenter</align>
 			<value>Priority:</value>
 		    </textarea>
 
                     <textarea name="channelrecpriority" from="callsign">
-                        <area>1790,10,-20,40</area>
+                        <area>100%-70,100%-40,-20,35</area>
 			<align>right,vcenter</align>
                     </textarea>
                 </state>

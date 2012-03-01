@@ -14,6 +14,8 @@
 	</group>
 
 	<group name="msggroup" from="baseMsgGroupWide">
+	    <area>75,100%-280,-75,180</area>
+
 	    <textarea name="update_text" from="basetextarea">
 		<area>10,100%-110,-10,100</area>
 		<multiline>yes</multiline>
@@ -22,9 +24,9 @@
 	    </textarea>
 
 	    <textarea name="pause_text">
-		<area>10,5,-10,35</area>
+		<area>100%-200,5,-20,35</area>
 		<font>mysmall</font>
-		<align>center</align>
+		<align>top,right</align>
 	    </textarea>
 	</group>
 
@@ -49,7 +51,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -174,7 +176,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -286,7 +288,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -460,7 +462,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -488,7 +490,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -516,7 +518,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -549,7 +551,7 @@
 	</group>
 
 	<group name="msggroup">
-	    <area>52,809,500,240</area>
+	    <area>75,100%-280,-110,180</area>
 	    <textarea name="copyright" from="msgText">
 		<area>10,10,-10,-70</area>	
 	    </textarea>
@@ -768,12 +770,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptxt" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>560,50,1280,-300</area>
+	    <area>50%-640,50,1280,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

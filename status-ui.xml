@@ -14,14 +14,14 @@
 	    </group>
 	</group>
 
-	<group name="helpgroup" from="baseMsgGroupTall">
+	<group name="helpgroup" from="baseMsgGroupLarge">
 	    <textarea name="justhelptext" from="msgText">
 		<align>top,left</align>
 	    </textarea>
 	</group>
 
         <buttonlist name="category" from="groupsList">
-	    <area>35,0,460,690</area>
+	    <area>30,0,420,-350</area>
 	  <align>vcenter</align>
 	</buttonlist>
 
