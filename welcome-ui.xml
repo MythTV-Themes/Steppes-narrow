@@ -13,7 +13,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>200,40,-200,-100</area>
+	    <area>50%-690,40,1380,-100</area>
 	
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -39,7 +39,7 @@
 
 	    <group name="current">
 		<!-- current recordings status -->
-		<area>75, 300, 660, -150</area>
+		<area>75, 300, 590, -150</area>
 
 		<shape name="background">
 		    <area>0,0,100%,100%</area>
@@ -64,7 +64,7 @@
 
 	    <group name="next">
 		<!-- next scheduled recording status -->
-		<area>785, 300, 660, -150</area>
+		<area>715, 300, 590, -150</area>
 
 		<shape name="background">
 		    <area>0,0,100%,100%</area>

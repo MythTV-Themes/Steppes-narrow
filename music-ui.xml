@@ -931,7 +931,7 @@
 	</group>
     </window>
 
-    <!-- Home -> Media Library -> Listen to Music -> 'E'
+    <!-- Home -> Media Library -> Listen to Music -> 'E'(dit)
     -->
     <window name="editmetadata">
 
@@ -1081,7 +1081,7 @@
 	</group>
     </window>
 
-    <!-- Home -> Media Library -> Listen to Music -> 'E' -> Album Art
+    <!-- Home -> Media Library -> Listen to Music -> 'E'(dit) -> Album Art
     -->
     <window name="editalbumart">
 

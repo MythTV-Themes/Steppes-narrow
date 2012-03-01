@@ -49,9 +49,7 @@
 		    <area>0,0,100%,110</area>
 
 		    <state name="inactive">
-			<!-- Width needs to have <buttonarea>
-			     subtracted from it -->
-			<area>0,0,-40,110</area>
+			<area>0,0,100%,110</area>
 
 			<imagetype name="buttonimage">
 			    <area>10,10,140,90</area>
@@ -101,9 +99,7 @@
 		    <area>0,0,100%,110</area>
 
 		    <state name="inactive">
-			<!-- Width needs to have <buttonarea>
-			     subtracted from it -->
-			<area>0,0,-40,110</area>
+			<area>0,0,100%,110</area>
 
 			<imagetype name="buttonimage">
 			    <area>10,10,200,-10</area>
@@ -133,9 +129,7 @@
 		    </state>
 		    <state name="active" from="inactive" />
 		    <state name="selectedinactive" from="inactive">
-			<!-- Width needs to have <buttonarea>
-			     subtracted from it -->
-			<area>0,0,-40,330</area>
+			<area>0,0,100%,330</area>
 			<imagetype name="buttonimage">
 			    <area>10,10,200,130</area>
 			</imagetype>

@@ -75,7 +75,7 @@
 	</group>
 
 	<group name="group2">
-	    <area>430,60,410,250</area>
+	    <area>320,105,410,250</area>
 
 	    <textarea name="fps">
 		<font>small</font>
@@ -109,7 +109,7 @@
 	</group>
 
 	<group name="group3">
-	    <area>850,60,530,250</area>
+	    <area>625,60,530,250</area>
 
 	    <textarea name="cpuload">
 		<font>small</font>
@@ -144,7 +144,7 @@
 	</group>
 
 	<group name="group4">
-	    <area>1420,60,-5,250</area>
+	    <area>970,105,-5,250</area>
 
 	    <textarea name="audio">
 		<font>small</font>
@@ -187,7 +187,7 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>600,860,-600,70</area>
+        <area>50%-360,860,720,70</area>
 
 	<group name="msggroup">
 	    <area>0,0,100%,100%</area>
@@ -220,7 +220,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <area>1560,70,160,80</area>
+        <area>100%-360,70,160,80</area>
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
@@ -246,7 +246,7 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>100,770,1720,80</area>
+        <area>50%-690,770,1380,80</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -263,19 +263,19 @@
         </textarea>
         <textarea name="description">
             <font>small</font>
-            <area>10,5,1700,40</area>
+            <area>10,5,-10,40</area>
             <align>hcenter,bottom</align>
             <template>%DESCRIPTION%
 		%(|REMAININGTIME|)%%(|BEHINDTIME|)%%VALUE%%UNITS%</template>
         </textarea>
         <clock name="clock">
-            <area>1380,10,330,50</area>
+            <area>100%-340,10,330,50</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,top</align>
         </clock>
         <progressbar name="position">
-            <area>10,55,1700,12</area>
+            <area>10,55,-10,12</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
@@ -315,7 +315,7 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,470,-100,380</area>
+        <area>50%-690,470,1380,380</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -343,36 +343,36 @@
 
 	    <textarea name="title">
 		<font>large</font>
-		<area>5,5,-5,45</area>
+		<area>5,5,-5,50</area>
 		<align>left,top</align>
+	    </textarea>
+	    <textarea name="lenmins">
+		<area>100%-255,60,250,35</area>
+		<font>smallinfo</font>
+		<align>right,top</align>
 	    </textarea>
 	    <textarea name="s00e00">
 		<font>smallinfo</font>
-		<area>10,55,100,35</area>
+		<area>10,60,100,35</area>
 		<align>left,top</align>
 	    </textarea>
 	    <textarea name="starttime">
 		<font>smallinfo</font>
-		<area>120,55,600,35</area>
+		<area>120,60,400,35</area>
 		<align>left,top</align>
 		<template>%STARTDATE%   %STARTTIME% - %ENDTIME%</template>
 	    </textarea>
 	    <textarea name="originalairdate">
 		<font>smallinfo</font>
-		<area>720,55,350,35</area>
+		<area>530,60,400,35</area>
 		<align>left,top</align>
 		<template>(%1)</template>
 	    </textarea>
 	    <textarea name="year">
 		<font>smallinfo</font>
-		<area>720,55,350,35</area>
+		<area>530,60,400,35</area>
 		<align>left,top</align>
 		<template>(%1)</template>
-	    </textarea>
-	    <textarea name="lenmins">
-		<area>100%-255,55,250,35</area>
-		<font>smallinfo</font>
-		<align>right,top</align>
 	    </textarea>
 	    <textarea name="description">
 		<font>medium</font>
@@ -634,7 +634,7 @@
             <pixelsize>40</pixelsize>
         </fontdef>
 
-        <area>100,470,-100,380</area>
+        <area>50%-690,470,1380,380</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -736,7 +736,7 @@
             <pixelsize>34</pixelsize>
         </fontdef>
 
-        <area>400,200,-400,-200</area>
+        <area>50%-560,200,1120,-200</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>
@@ -912,7 +912,7 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
-        <area>100,735,1720,115</area>
+        <area>50%-690,735,1380,115</area>
 
         <shape name="background">
             <area>0,0,100%,100%</area>

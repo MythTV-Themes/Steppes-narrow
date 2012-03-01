@@ -67,7 +67,7 @@
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <spacing>0</spacing>
 	    <statetype name="buttonitem">
-		<area>0,0,50%,30</area>
+		<area>0,0,50%,35</area>
 		<state name="active">
 		    <area>0,0,100%,100%</area>
 		    <shape name="timebg">
@@ -443,7 +443,9 @@
 	    </statetype>
 	</buttonlist>
 
-	<buttonlist name="groups" from="groupsList" />
+	<buttonlist name="groups" from="groupsList">
+	    <area>30,0,420,-250</area>
+	</buttonlist>
 
     </window>
 
@@ -873,7 +875,7 @@
 	</group>
 
 	<webbrowser name="browser">
-	    <area>50,80,1820,890</area>
+	    <area>50,80,-50,890</area>
 	    <zoom>1.0</zoom>
 	    <background color="#000000" alpha="1"/>
 	</webbrowser>
@@ -989,12 +991,7 @@
 	    
 	    <group name="clausegroup" from="baseMsgGroupWide">
 		<area>770,275,-50,150</area>
-		<textarea name="clausetext" from="msgText">
-		    <!--
-			<font>mysmall</font>
-			<align>top,left</align>
-		    -->
-		</textarea>
+		<textarea name="clausetext" from="msgText" />
 	    </group>
 	    
 	    <textedit name="description" from="basemultilinetextedit">
@@ -1043,7 +1040,7 @@
         </imagetype>
 
 	<group name="formgroup">
-	    <area>525,35,540,960</area>
+	    <area>480,35,540,960</area>
 
 	    <shape name="layershape">
 		<area>0,0,100%,100%</area>
@@ -1051,6 +1048,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <buttonlist name="rules" from="baselargeselector">
@@ -1120,7 +1118,7 @@
 	 -> Program Guide -> 'E'(dit) -> Schedule Options
     -->
     <window name="scheduleoptionseditor">
-        <area>525,35,-30,960</area>
+        <area>480,35,-30,960</area>
 
         <group name="schedulegroup">
 	    <area>50%-350,0,700,100%</area>
@@ -1131,6 +1129,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <textarea name="titlelabel">
@@ -1239,7 +1238,7 @@
 	 -> Program Guide -> 'E'(dit) -> Schedule Options -> Schedule Filters
     -->
     <window name="schedulefiltereditor">
-        <area>525,35,-30,960</area>
+        <area>480,35,-30,960</area>
 
         <group name="schedulegroup">
 	    <area>100%-700,0,700,100%</area>
@@ -1250,6 +1249,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <textarea name="titlelabel">
@@ -1287,7 +1287,7 @@
 	 -> Program Guide -> 'E'(dit) -> Storage Options
     -->
     <window name="storageoptionseditor">
-        <area>525,35,-30,960</area>
+        <area>480,35,-30,960</area>
 
         <group name="schedulegroup">
 	    <area>50%-395,0,790,100%</area>
@@ -1298,6 +1298,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <textarea name="titlelabel">
@@ -1389,7 +1390,7 @@
 	 -> Program Guide -> 'E'(dit) -> Post Processing
     -->
     <window name="postproceditor">
-        <area>525,35,-30,960</area>
+        <area>480,35,-30,960</area>
 
         <group name="schedulegroup">
 	    <area>50%-355,0,710,100%</area>
@@ -1400,6 +1401,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <textarea name="titlelabel">
@@ -1624,6 +1626,7 @@
 		    <gradient start="#000000" end="#303030" alpha="240"
 			      direction="horizontal"  />
 		</fill>
+		<line color="#FFFFFF" alpha="255" width="1" />
 	    </shape>
 
 	    <textarea name="titlelabel">

@@ -14,17 +14,18 @@
 	</group>
 
 	<group name="modegroup" from="baseModeGroup">
-	    <area>70,25,-70,60</area>
-	    <textarea name="name" from="pagemode" />
+	    <area>70,25,-70,40</area>
+	    <textarea name="name" from="pagemode">
+		<font>mysmalllightgrey</font>
+	    </textarea>
 	</group>
 
 	<group name="msg" from="baseMsgGroupWide">
-	    <area>45,950,500,110</area>
 	    <textarea name="status" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>80,120,-80,-165</area>
+	    <area>80,80,-80,-200</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -121,21 +122,21 @@
 	    </buttonlist>
 
 	    <textarea name="manuallabel" from="labeltext">
-		<position>500,100%-80</position>
+		<position>10,100%-80</position>
 		<value>Search terms:</value>
 	    </textarea>
 
 	    <textedit name="manualsearch" from="basetextedit">
-		<position>760,100%-80</position>
+		<position>270,100%-80</position>
 	    </textedit>
 
 	    <button name="search" from="varbuttonleft">
-		<position>1280,100%-80</position>
+		<position>790,100%-80</position>
 		<value>Search</value>
 	    </button>
 
 	    <button name="skip" from="varbuttonleft">
-		<position>1500,100%-80</position>
+		<position>1010,100%-80</position>
 		<value>Skip</value>
 	    </button>
 	</group>
@@ -161,8 +162,8 @@
 
 	    <buttonlist name="channels" from="basebuttonlist">
 		<!-- arrows space is 25, so to balance use -60 -->
-		<area>35,30,-60,660</area>
-		<buttonarea>25,0,100%,100%</buttonarea>
+		<area>30,30,-30,580</area>
+		<buttonarea>0,0,-25,100%</buttonarea>
 
 		<statetype name="buttonitem">
 		    <area>0,0,100%,100%</area>
@@ -197,7 +198,7 @@
 	    </buttonlist>
 
 	    <group name="optiongroup">
-		<area>100,710,-200,720</area>
+		<area>100,630,-200,720</area>
 
 		<textarea name="sortlabel" from="labeltext">
 		    <position>0,0</position>
@@ -230,22 +231,22 @@
 		    <position>200,160</position>
 		    <value>Hide Channels without channel number.</value>
 		</textarea>
-
-		<button name="scan" from="varbuttoncenter">
-		    <area>1100,0,-20,70</area>
-		    <value>Channel Scan</value>
-		</button>
-
-		<button name="importicons" from="scan">
-		    <position>1100,80</position>
-		    <value>Icon Download</value>
-		</button>
-
-		<button name="edittransport" from="scan">
-		    <position>1100,160</position>
-		    <value>Edit Transports</value>
-		</button>
 	    </group>
+
+	    <button name="scan" from="varbuttoncenter">
+		<area>50,100%-80,50%-200,70</area>
+		<value>Channel Scan</value>
+	    </button>
+
+	    <button name="importicons" from="scan">
+		<position>50%-200,100%-80</position>
+		<value>Icon Download</value>
+	    </button>
+
+	    <button name="edittransport" from="scan">
+		<position>50%+200,100%-80</position>
+		<value>Edit Transports</value>
+	    </button>
 	</group>
     </window>
 

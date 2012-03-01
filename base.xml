@@ -897,7 +897,7 @@
 		    <cornerradius>15</cornerradius>
 		</shape>
 		<textarea name="buttontext" from="basewidgettext">
-		    <area>30,8,-30,-8</area>
+		    <area>30,7,-30,-8</area>
 		</textarea>
 	    </state>
 	    <state name="selectedinactive" from="active" />
@@ -2444,7 +2444,7 @@ or
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>480,270,960,540</area>
+            <area>280,270,-280,540</area>
             <font>mylarge</font>
             <align>allcenter</align>
             <value>Please Wait...</value>
@@ -2459,7 +2459,7 @@ or
 	 -> Metadata Options -> [Perform Query] 
     -->
     <window name="MythMetadataResults">
-	<area>530,35,1360,960</area>
+	<area>30,35,-30,960</area>
 
 	<shape name="shape">
 	    <area>0,0,100%,100%</area>
@@ -2484,12 +2484,12 @@ or
 		    <area>0,0,100%,180</area>
 
 		    <imagetype name="buttonimage">
-			<area>100%-490,15,-15,-15</area>
+			<area>100%-290,15,-15,-15</area>
 			<preserveaspect>true</preserveaspect>
 		    </imagetype>
 
 		    <textarea name="title">
-			<area>20,4,-500,-50</area>
+			<area>20,4,-300,-50</area>
 			<align>center</align>
 			<font>mymediumbold</font>
 			<multiline>yes</multiline>
@@ -2501,7 +2501,7 @@ or
 			<template>Released %1</template>
 		    </textarea>
 		    <textarea name="userrating" from="basetextarea">
-			<area>430,100%-47,-500,45</area>
+			<area>430,100%-47,-300,45</area>
 			<multiline>no</multiline>
 			<align>vcenter,right</align>
 			<alpha>210</alpha>
@@ -2515,17 +2515,17 @@ or
 		    <statetype name="status" from="itemsSelectedState" />
 
 		    <imagetype name="buttonimage">
-			<area>100%-490,15,-15,-15</area>
+			<area>100%-290,15,-15,-15</area>
 		    </imagetype>
 
 		    <textarea name="title">
-			<area>20,5,-500,100</area>
+			<area>20,5,-300,100</area>
 			<font>mylargebold</font>
 			<multiline>yes</multiline>
 		    </textarea>
 
 		    <textarea name="description" from="basetextarea">
-			<area>30,105,-500,-50</area>
+			<area>30,105,-300,-50</area>
 			<multiline>yes</multiline>
 		    </textarea>
 		</state>
@@ -2537,7 +2537,7 @@ or
 	 -> Find Coverart Online
     -->
     <window name="MythArtworkResults">
-	<area>530,35,1360,960</area>
+	<area>30,35,-30,960</area>
 
 	<shape name="layershape">
 	    <area>0,0,100%,100%</area>
@@ -2563,39 +2563,39 @@ or
 	</imagetype>
 
 	<group name="path" from="baseModeGroup">
-	    <area>70,25,-70,60</area>
+	    <area>70,25,-70,40</area>
 	    <textarea name="fullpath" from="pagemode">
 		<font>mysmall</font>
 	    </textarea>
 	</group>
 
 	<group name="results">
-	    <area>20,80,1150,-30</area>
+	    <area>20,70,1050,-110</area>
 	    <buttonlist name="filelist" from="ArtworkList" />
 	</group>
 
 	<button name="back" from="varbuttoncenter">
-	    <area>1200,200,-10,70</area>
+	    <area>1090,200,-30,70</area>
 	    <value>Go up a level</value>
 	</button>
 
 	<button name="home" from="back">
-	    <position>1200,280</position>
+	    <position>1090,280</position>
 	    <value>Home</value>
 	</button>
 
 	<button name="cancel" from="back">
-	    <position>1200,360</position>
+	    <position>1090,360</position>
 	    <value>Cancel</value>
 	</button>
 
 	<button name="ok" from="back">
-	    <position>1200,440</position>
+	    <position>1090,440</position>
 	    <value>OK</value>
 	</button>
 
 	<textedit name="location" from="basewidetextedit">
-	    <area>1200,700,-30,70</area>
+	    <area>30,100%-100,-30,70</area>
 	</textedit>
     </window>
 

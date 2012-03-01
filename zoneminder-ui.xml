@@ -22,7 +22,7 @@
 	</group>
 
 	<group name="statusgroup" from="baseModeGroup">
-	    <area>20,25,-20,50</area>
+	    <area>50%-690,25,1380,50</area>
 	    <textarea name="status_text" from="pagemode">
 		<font>mymediumgreen</font>
 		<font state="running">mymediumgreen</font>
@@ -40,7 +40,7 @@
 	</textarea>
 
 	<group name="details">
-	    <area>60,100,-60,-130</area>
+	    <area>50%-690,100,1380,-130</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -127,7 +127,7 @@
 	</group>
 
 	<group name="details">
-	    <area>30,30,-30,-100</area>
+	    <area>50%-690,30,1380,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -150,7 +150,7 @@
 	    </buttonlist>
 
 	    <group name="posgroup" from="baseModeGroup">
-		<area>1320,20,-50,70</area>
+		<area>100%-500,20,-50,70</area>
 		<textarea name="eventno_text" from="pagemode">
 		    <align>center</align>
 		    <font>mysmall</font>
@@ -461,7 +461,7 @@
 	</group>
 
 	<group name="details">
-	    <area>30,30,-30,-100</area>
+	    <area>50%-690,30,1380,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

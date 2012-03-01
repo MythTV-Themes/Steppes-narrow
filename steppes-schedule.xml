@@ -19,7 +19,7 @@
 	    </textarea>
 	</group>
 
-	<buttonlist name="programs" from="episodeList">
+	<buttonlist name="programs" from="itemsList">
 	    <area>30,60,-30,-200</area>
 	    <buttonarea>25,0,100%,100%</buttonarea>
 	    <statetype name="buttonitem">
@@ -79,30 +79,32 @@
 			</textarea>
 		    </group>
 
-		    <group name="progstats" from="programStats">
-			<area>935,4,100%,40</area>
+		    <textarea name="scheduleinfo">
+			<area>940,7,-15,70</area>
+			<font>myverysmall</font>
+			<align>right,top</align>
+			<multiline>yes</multiline>
+		    </textarea>
 
-			<textarea name="timedate">
-			    <area>0,0,0,0</area>
-			</textarea>
-			
-			<textarea name="lastrecorded">
-			    <area>0,6,-305,40</area>
-			    <align>center</align>
-			    <font>mysmallgrey</font>
-			    <template>(Last: %1)</template>
-			</textarea>
+		    <textarea name="lastrecorded">
+			<area>325,43,600,36</area>
+			<align>center</align>
+			<font>mysmallgrey</font>
+			<template>(Last: %1)</template>
+		    </textarea>
+		    
+		    <textarea name="titlesubtitle">
+			<area>20,80,-310,35</area>
+			<align>left,vcenter</align>
+			<font>mymedium</font>
+		    </textarea>
 
-			<textarea name="lenmins">
-			    <area>0,0,0,0</area>
-			</textarea>
+		    <textarea name="channel">
+			<area>100%-300,80,-20,36</area>
+			<font>mysmallnarrowgrey</font>
+			<align>right,vcenter</align>
+		    </textarea>
 
-			<textarea name="channel">
-			    <area>100%-300,4,-15,40</area>
-			    <font>mysmallnarrowgrey</font>
-			    <align>right,vcenter</align>
-			</textarea>
-		    </group>
 		</state>
 
 		<state name="active" from="inactive" />
@@ -110,12 +112,13 @@
 		<state name="selectedinactive" from="active">
 		    <area>0,0,100%,320</area>
 
-		    <textarea name="titlesubtitle">
-			<area>0,0,0,0</area>
-		    </textarea>
-
 		    <textarea name="description">
+			<align>left</align>
 			<area>25,125,-25,-110</area>
+			<font>mysmall</font>
+			<multiline>yes</multiline>
+			<cutdown>yes</cutdown>
+			<template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
 		    </textarea>
 
 		    <group name="details">
@@ -150,14 +153,6 @@
 			<textarea name="recordingprofile" from="category">
 			    <position>1110,0</position>
 			</textarea>
-
-			<textarea name="scheduleinfo"
-				  from="category">
-			    <area>100%-275,0,-20,-5</area>
-			    <align>right,top</align>
-			    <multiline>yes</multiline>
-			</textarea>
-
 
 			<textarea name="storagegroup_label"
 				  from="category_label">
