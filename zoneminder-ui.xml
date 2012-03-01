@@ -341,7 +341,7 @@
 
         <!-- fullscreen player -->
         <imagetype name="framefsimage">
-            <area>0,0,1920,1080</area>
+            <area>0,0,100%,100%</area>
         </imagetype>
 
 	<group name="details">

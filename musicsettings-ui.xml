@@ -15,12 +15,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>550,40,-100,-150</area>
+	    <area>50%-690,40,1380,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -111,12 +111,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-350,-400</area>
+	    <area>50%-500,200,1000,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -175,12 +175,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-450,-400</area>
+	    <area>50%-400,200,800,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -239,12 +239,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,40,-100,-200</area>
+	    <area>50%-690,40,1380,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -335,12 +335,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,40,-100,-200</area>
+	    <area>50%-690,40,1380,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -416,12 +416,12 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroupTall">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText" />
 	</group>
 
 	<group name="dialog">
-	    <area>600,150,-450,-400</area>
+	    <area>50%-400,200,800,-300</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

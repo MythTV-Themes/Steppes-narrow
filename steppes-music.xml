@@ -82,36 +82,36 @@
     </group>
 
     <group name="baseplayliststatus">
-	<area>40,30,-40,50</area>
+	<area>40,30,-40,80</area>
 
 	<shape name="background" from="basewidgetshape">
 	    <area>0,0,100%,100%</area>
 	</shape>
 
 	<textarea name="playlistposition" from="basetextarea">
-	    <area>50,8,240,40</area>
+	    <area>50%-540,8,240,40</area>
 	    <align>right,vcenter</align>
 	</textarea>
 
 	<progressbar name="playlistprogress" from="baseprogressbar">
-	    <position>300,15</position>
+	    <position>50%-300,15</position>
 	</progressbar>
 
 	<textarea name="playlisttime" from="basetextarea">
-	    <area>910,8,300,40</area>
+	    <area>50%+300,8,300,40</area>
 	    <align>left,vcenter</align>
 	</textarea>
 
 	<!-- repeat statetype -->
 	<statetype name="repeatstate">
-	    <area>1230,0,-350,50</area>
+	    <area>50%-360,35,350,50</area>
 	    <state name="off">
 		<area>0,0,100%,50</area>
 		<textarea name="repeattext" from="basetextarea">
 		    <area>0,5,300,-5</area>
 		    <font>mysmallnarrow</font>
 		    <value>Repeat: Off</value>
-		    <align>center</align>
+		    <align>right,vcenter</align>
 		</textarea>
 	    </state>
 	    <state name="track" from="off">
@@ -128,13 +128,13 @@
 
 	<!-- shuffle statetype -->
 	<statetype name="shufflestate">
-	    <area>100%-340,0,-10,50</area>
+	    <area>50%+10,35,350,35</area>
 	    <state name="off">
 		<area>0,0,100%,50</area>
 		<textarea name="shuffletext" from="basetextarea">
 		    <area>0,5,350,-5</area>
 		    <font>mysmallnarrow</font>
-		    <align>center</align>
+		    <align>left,vcenter</align>
 		    <value>Shuffle: Off</value>
 		</textarea>
 	    </state>
@@ -162,7 +162,7 @@
     </group>
 
     <group name="baseplaylistfullstatus" from="baseplayliststatus">
-	<area>30,30,-30,110</area>
+	<area>30,30,-30,125</area>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
@@ -170,7 +170,7 @@
         </imagetype>
 
         <statetype name="trackstate">
-            <position>115,100%-45</position>
+            <position>115,100%-40</position>
             <state name="playing">
                 <imagetype name="playicon">
                     <filename>mm_playicon.png</filename>
@@ -191,13 +191,13 @@
         </statetype>
 
         <textarea name="title" from="basetextarea">
-            <area>140,100%-45,-250,35</area>
+            <area>140,100%-40,-250,35</area>
             <font>mymedium</font>
             <template>Now Playing: %TITLE% by %ARTIST% on %ALBUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>100%-240,100%-45,-15,-5</area>
+            <area>100%-240,100%-40,-15,-5</area>
             <align>right</align>
             <font>mysmall</font>
         </textarea>
@@ -205,7 +205,7 @@
     </group>
 
     <group name="baseplaylist">
-	<area>20,145,-20,275</area>
+	<area>20,150,-20,275</area>
 
 	<textarea name="notracks" from="pagemode">
 	    <area>20,20,-20,-60</area>
@@ -278,13 +278,13 @@
 		    </textarea>
 
 		    <textarea name="title" from="basetextarea">
-			<area>170,5,800,-5</area>
+			<area>170,5,670,-5</area>
 			<align>left,vcenter</align>
 			<font>mymedium</font>
 		    </textarea>
 
 		    <textarea name="artist" from="title">
-			<area>980,5,-180,-5</area>
+			<area>850,5,-180,-5</area>
 			<align>left,vcenter</align>
 		    </textarea>
 

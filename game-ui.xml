@@ -7,17 +7,17 @@
     <window name="gameui">
 
         <imagetype name="fanart">
-            <area>0,0,1920,1080</area>
+            <area>0,0,100%,100%</area>
         </imagetype>
 
 	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
+	    <area>35,25,410,680</area>
 	    <filename />
 	    <preserveaspect>true</preserveaspect>
 	</imagetype>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -45,7 +45,7 @@
 	</group>
 
 	<group name="treegroup">
-	    <area>535,50,-50,520</area>
+	    <area>480,30,-30,500</area>
 
 	    <shape name="background" from="baseareashape">
 		<area>0,0,100%,100%</area>
@@ -60,7 +60,7 @@
 	</group>
 
 	<group name="detailgroup">
-	    <area>535, 590, -50, 400</area>
+	    <area>480, 540, -30, 450</area>
 
 	    <shape name="background" from="baseareashape">
 		<area>0,0,100%,100%</area>
@@ -141,17 +141,25 @@
     <window name="gamedetailspopup">
 
         <imagetype name="fanart">
-            <area>0,0,1920,1080</area>
+            <area>0,0,100%,100%</area>
         </imagetype>
 
+        <group name="PageHeading" from="basePageHeading">
+	    <group name="Heading">
+	        <textarea name="text">
+		    <value>Game Information</value>
+		</textarea>
+	    </group>
+	</group>
+
 	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
+	    <area>35,25,410,680</area>
 	    <filename />
 	    <preserveaspect>true</preserveaspect>
 	</imagetype>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -170,16 +178,8 @@
 	    </imagetype>
 	</group>
 
-        <group name="PageHeading" from="basePageHeading">
-	    <group name="Heading">
-	        <textarea name="text">
-		    <value>Game Information</value>
-		</textarea>
-	    </group>
-	</group>
-
 	<group name="details">
-	    <area>535,50,-50,-130</area>
+	    <area>480,50,-30,-100</area>
 
 	    <shape name="background" from="baseareashape">
 		<area>0,0,100%,100%</area>
@@ -223,7 +223,7 @@
 		<value>System(s):</value>
 	    </textarea>
 	    <textarea name="allsystems" from="title">
-		<area>270,340,400,70</area>
+		<area>270,340,-20,70</area>
 	    </textarea>
 
 	    <textarea name="genre_lbl" from="gamename_lbl">
@@ -254,7 +254,7 @@
 		<position>10,660</position>
 		<value>Publisher:</value>
 	    </textarea>
-	    <textarea name="publisher" from="text">
+	    <textarea name="publisher" from="allsystems">
 		<position>270,660</position>
 	    </textarea>
 
@@ -266,6 +266,7 @@
 		<position>270,740</position>
 	    </textarea>
 
+<!--
 	    <group name="descgroup">
 		<area>700,340,-20,-100</area>
 
@@ -283,7 +284,7 @@
 		    <multiline>yes</multiline>
 		</textarea>
 	    </group>
-
+-->
 	    <button name="play_button" from="varbuttonright">
 		<value>Play</value>
 	    </button>
@@ -300,7 +301,7 @@
     <window name="edit_metadata">
 
         <imagetype name="fanart">
-            <area>0,0,1920,1080</area>
+            <area>0,0,100%,100%</area>
         </imagetype>
 
 	<imagetype name="coverart">

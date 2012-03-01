@@ -46,12 +46,13 @@
 	</textarea>
 
 	<buttonlist name="images" from="basegridlist">
+	    <area>70,90,-70,-50</area>
             <spacing>2</spacing>
 	    <statetype name="upscrollarrow">
-		<area>30,100%-15,15,15</area>
+		<area>100%-20,50%-25,20,20</area>
 	    </statetype>
 	    <statetype name="downscrollarrow">
-		<area>50,100%-15,15,15</area>
+		<area>100%-20,50%+5,20,20</area>
 	    </statetype>
         </buttonlist>
     </window>

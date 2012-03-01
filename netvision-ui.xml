@@ -165,7 +165,7 @@
 	 -> New Site
     -->
     <window name="rsseditpopup">
-        <area>-1,50,1500,850</area>
+        <area>-1,70,1380,-150</area>
 
 	<shape name="dialogbackground" from="basewidgetshape">
 	    <area>0,0,100%,100%</area>
@@ -271,7 +271,7 @@
 
 	    <button name="preview_browse" from="varbuttonleft">
 		<position>937,280</position>
-		<value>Select to change image...</value>
+		<value>Select to change image</value>
 	    </button>
 
 	    <group name="buttongroup">
@@ -292,10 +292,9 @@
          -> "Change View" -> "Switch to List View"
     -->
     <window name="tree">
-        <area>0,0,1920,1080</area>
 
 	<imagetype name="fanart">
-	    <area>0,0,1920,1080</area>
+	    <area>0,0,100%,100%</area>
 	    <filename>Backgrounds/</filename>
 	</imagetype>
 
@@ -317,7 +316,7 @@
 	</textarea>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -336,13 +335,13 @@
 	    </imagetype>
 	</group>
 
-	<buttontree name="videos">
-	    <area>505,120,1370,870</area>
+	<buttontree name="videos">	
+	    <area>480,120,-30,-100</area>
 
 	    <buttonlist name="listtemplate">
 		<arrange>stack</arrange>
 		<align>bottom,left</align>
-		<area>505,120,1370,870</area>
+		<area>480,120,-30,-100</area>
 		<buttonarea>20,0,100%,100%</buttonarea>
 		<wrapstyle>selection</wrapstyle>
 		<spacing>0</spacing>
@@ -353,11 +352,11 @@
 		</textarea>
 		
 		<statetype name="buttonitem">
-		    <area>0,0,1370,100%</area>
+		    <area>0,0,910,100%</area>
 		    <minsize>100%,60</minsize>
 
 		    <state name="inactive">
-			<area>0,0,1370,60</area>
+			<area>0,0,100%,60</area>
 			
 			<shape name="statusborder">
 			    <area>5,0,-5,100%</area>
@@ -389,7 +388,7 @@
 		    </state>
 		    
 		    <state name="selectedinactive" from="inactive">
-			<area>0,0,1370,400</area>
+			<area>0,0,100%,400</area>
 			<minsize>100%,60</minsize>
 			
 			<shape name="statusborder">
@@ -493,14 +492,14 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroup">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="msgText">
 		<value>Choose the sites you wish to browse/search.</value>
 	    </textarea>
 	</group>
 
 	<group name="dialog">
-	    <area>540,40,1330,-100</area>
+	    <area>50,40,-50,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -551,14 +550,14 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroup">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="msgText">
 		<value>Choose the sites you wish to browse/search.</value>
 	    </textarea>
 	</group>
 
 	<group name="dialog">
-	    <area>50,40,-50,-150</area>
+	    <area>50,40,-50,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -826,7 +825,7 @@
 	</textarea>
 
 	<buttonlist name="videos" from="basegridlist">
-	    <area>30,10,-30,-100</area>
+	    <area>30,25,-30,-100</area>
 	    <scrollstyle>groupcenter</scrollstyle>
 	    <wrapstyle>items</wrapstyle>
 

@@ -145,7 +145,7 @@
 
     <fontdef name="mysmall" from="basegothic">
 	<color>#F0F0FF</color>
-	<pixelsize>29</pixelsize>
+	<pixelsize>28</pixelsize>
     </fontdef>
 
     <fontdef name="mysmallbold" from="mysmall">
@@ -1416,7 +1416,7 @@
     </group>
 
     <group name="baseMsgGroupWide" from="baseMsgGroup">
-	<area>35,100%-340,500,240</area>
+	<area>75,100%-180,-75,80</area>
     </group>
 
 

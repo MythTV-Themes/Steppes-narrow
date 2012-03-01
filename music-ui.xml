@@ -16,7 +16,7 @@
 	</group>
 
 	<group name="playlist" from="baseplaylist">
-	    <area>20,85,-20,-285</area>
+	    <area>20,115,-20,-345</area>
 
 	    <buttonlist name="currentplaylist">
 		<wrapstyle>selection</wrapstyle>
@@ -66,12 +66,12 @@
 			<textarea name="lastplayed" from="genre">
 			    <area>820,100%-45,500,-10</area>
 			</textarea>
-
+<!--
 			<textarea name="playcount" from="genre">
 			    <area>1340,100%-45,300,-10</area>
 			    <template>Played %1 times</template>
 			</textarea>
-
+-->
 			<textarea name="length" from="artist">
 			    <area>100%-150,100%-45,-20,-10</area>
 			    <align>right,vcenter</align>
@@ -120,7 +120,7 @@
         <group name="playliststatus" from="baseplayliststatus" />
 
 	<group name="infogroup">
-	    <area>500,802,-50,-100</area>
+	    <area>480,100%-335,-50,235</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -146,7 +146,7 @@
 	    </textarea>
 
 	    <statetype name="ratingstate" from="baseratingstate">
-		<position>30,100%-35</position>
+		<position>30,100%-65</position>
 	    </statetype>
 
 	    <progressbar name="progress" from="baseprogressbar">
@@ -159,7 +159,7 @@
 	    </textarea>
 
 	    <textarea name="info" from="basetextarea">
-  	        <area>240,100%-45,280,-10</area>
+  	        <area>240,100%-95,280,-10</area>
 		<font>mysmallnarrow</font>
 		<align>center</align>
 	    </textarea>
@@ -171,10 +171,12 @@
 	</group>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
+	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
 		<area>0,0,100%,100%</area>
+		<minsize vanish="yes">100%,100%</minsize>
 		<type>roundbox</type>
 		<cornerradius>5</cornerradius>
 		<fill color="#555555" alpha="255" />
@@ -183,6 +185,8 @@
 
 	    <video name="visualizer">
 		<area>12,12,-12,-12</area>
+		<minsize vanish="yes">100%,100%</minsize>
+		<preserveaspect>true</preserveaspect>
 	    </video>
 	</group>
 
@@ -486,7 +490,7 @@
 	    </textedit>
 
 	    <group name="rulegroup">
-		<area>10,190,-10,-200</area>
+		<area>10,190,-10,-280</area>
 
 		<shape name="dialogbackground" from="baseselectedwidgetshape">
 		    <area>0,0,100%,100%</area>
@@ -536,53 +540,49 @@
 	    </group>
 
 	    <textarea name="orderbylbl" from="categorylbl">
-		<position>20,100%-180</position>
+		<position>20,100%-260</position>
 		<value>Order By:</value>
 	    </textarea>
 
 	    <buttonlist name="orderbyselector" from="basewideselector">
-		<position>270,100%-180</position>
+		<position>270,100%-260</position>
 	    </buttonlist>
 
 	    <button name="orderbybutton" from="varbuttonleft">
-		<position>880,100%-180</position>
+		<position>880,100%-260</position>
 		<value>Edit</value>
 	    </button>
 
 	    <textarea name="limitlbl"  from="categorylbl">
-		<position>20,100%-100</position>
+		<position>20,100%-180</position>
 		<value>Limit:</value>
 	    </textarea>
 
 	    <spinbox name="limitspin" from="basespinbox">
-		<position>270,100%-100</position>
+		<position>270,100%-180</position>
 		<!--<template type="zero">No Limit</template> -->
 	    </spinbox>
 
 	    <group name="matchgroup" from="basematchgroup">
-		<area>440, 100%-100, 300, 70</area>
+		<area>440, 100%-180, 300, 70</area>
 		<textarea name="matchestext" from="resulttext" />
 	    </group>
 
-	    <group name="buttongroup">
-		<area>100%-600, 100%-180, -20, -10</area>
+	    <button name="showresultsbutton" from="varbuttoncenter">
+		<area>20, 100%-80, 70%-20, 70</area>
+		<value>Show Results</value>
+	    </button>
 
-		<button name="showresultsbutton" from="varbuttoncenter">
-		    <area>0, 0, 100%, 70</area>
-		    <value>Show Results</value>
-		</button>
+	    <button name="savebutton" from="varbuttonleft">
+		<area>70%+5, 100%-80, 250, 70</area>
+		<value>Save</value>
+	    </button>
 
-		 <button name="savebutton" from="varbuttonleft">
-		     <area>50%+5, 80, 250, 70</area>
-		     <value>Save</value>
-		 </button>
-
-		 <button name="cancelbutton" from="varbuttonright">
-		     <area>50%-255, 80, 250, 70</area>
-		     <value>Cancel</value>
-		 </button>
-	     </group>
-	 </group>
+	    <button name="cancelbutton" from="varbuttonright">
+		<area>70%-255, 100%-80, 250, 70</area>
+		<value>Cancel</value>
+	    </button>
+	</group>
 
     </window>
 
@@ -598,7 +598,7 @@
 	</shape>	
 
         <textarea name="title" from="basetextarea">
-            <area>20,20,-20,60</area>
+            <area>40,20,620,60</area>
             <font>mymedium</font>
 	    <align>center</align>
             <value>Edit Criteria</value>
@@ -870,9 +870,9 @@
 	</group>
 
 	<group name="posgroup" from="baseModeGroup">
-	    <area>160,1010,330,50</area>
+	    <area>330,100%-150,-330,50</area>
 	    <textarea name="position" from="pagemode">
-		<align>left,vcenter</align>
+		<align>center</align>
 		<font>mysmall</font>
 		<extraleading>1</extraleading>
 		<cutdown>left</cutdown>
@@ -880,7 +880,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>150, 30, -150, -100</area>
+	    <area>50%-690, 30, 1380, -170</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -947,7 +947,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>250,30,-250,-90</area>
+	    <area>50%-690,30,1380,-90</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1105,28 +1105,28 @@
 	</group>
 
         <shape name="preview-shape">
-            <area>60,40,1320,760</area>
+            <area>60,40,800,600</area>
             <type>roundbox</type>
             <fill color="#000000" />
             <cornerradius>20</cornerradius>
         </shape>
 
         <imagetype name="coverartimage">
-            <area>80,60,1280,720</area>
+            <area>80,60,760,560</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="imagefilenametext" from="basetextarea">
-            <area>80,810,1260,55</area>
-            <multiline>no</multiline>
+            <area>80,660,760,70</area>
+            <multiline>yes</multiline>
             <font>mylarge</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="imagetypetext" from="basetextarea">
-            <area>80,865,420,45</area>
+            <area>80,740,420,35</area>
             <multiline>no</multiline>
             <font>mysmall</font>
             <align>left,vcenter</align>
@@ -1134,7 +1134,7 @@
         </textarea>
 
 	<buttonlist name="coverartlist" from="ArtworkList">
-            <area>1400,40,-50,-80</area>
+            <area>100%-520,40,-50,-80</area>
 	    <align>left,vcenter</align>
             <statetype name="buttonitem">
                 <state name="inactive">
@@ -1174,12 +1174,12 @@
 	</buttonlist>
 
         <button name="metadatabutton" from="varbuttoncenter">
-	    <area>80, 920, 600, 70</area>
+	    <area>80, 830, 600, 70</area>
             <value>Metadata</value>
         </button>
 
         <button name="donebutton" from="varbuttoncenter">
-	    <area>80, 1000, 600, 70</area>
+	    <area>80, 900, 600, 70</area>
             <value>Done</value>
         </button>
 
@@ -1377,7 +1377,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>200,40,-200,-100</area>
+	    <area>50%-690,40,1380,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1549,7 +1549,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>200,40,-200,-100</area>
+	    <area>50%-690,40,1380,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -1591,8 +1591,8 @@
 		<align>hcenter</align>
 	    </textarea>
 
-	    <button name="copy" from="varbuttonleft">
-		<position>1200,210</position>
+	    <button name="copy" from="varbuttoncenter">
+		<area>760,320,600,70</area>
 		<value>Copy</value>
 	    </button>
 
@@ -1633,7 +1633,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>200,40,-200,-100</area>
+	    <area>50%-690,40,1380,-100</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>

@@ -460,7 +460,7 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroup">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="helptext" from="msgText">
 		<value>(1) Channel (2) Priority</value>
 	    </textarea>
@@ -639,7 +639,7 @@
 	 -> Titles
     -->
     <window name="phrasepopup" from="MythDialogBox">
-	<area>-1,30,1000,880</area>
+	<area>-1,30,1000,-200</area>
 
 	<shape name="dialogbackground" from="basewidgetshape">
 	    <area>0,0,100%,100%</area>
@@ -653,7 +653,7 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-	    <area>50,80,-50,-170</area>
+	    <area>50,80,-50,-160</area>
 	    <buttonarea>0,0,100%,100%</buttonarea>
 	    <showarrow>no</showarrow>
         </buttonlist>
@@ -744,7 +744,7 @@
 	 -> Advanced
     -->
     <window name="powersearchpopup" from="MythDialogBox">
-        <area>-1,30,1000,900</area>
+        <area>-1,30,1000,-200</area>
 
 	<shape name="dialogbackground" from="basewidgetshape">
 	    <area>0,0,100%,100%</area>
@@ -788,6 +788,7 @@
 	    </group>
 	</group>
 
+	<!-- Cannot use baseMsgGroupWide here -->
 	<group name="instructions" from="baseMsgGroup">
 	    <textarea name="showinstr" from="msgText">
 		<value>(1) Time (2) Title</value>
@@ -949,7 +950,7 @@
 	</group>
 
 	<group name="dialog">
-	    <area>30,30,-30,-160</area>
+	    <area>50%-690,30,1380,-160</area>
 
 	    <shape name="dialogbackground" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -971,7 +972,7 @@
 	    </textarea>
 	    
 	    <textedit name="title" from="basewidetextedit">
-		<area>940,100,600,100</area>
+		<area>940,100,-50,100</area>
 		<group name="center">
 		    <textarea name="text">
 			<multiline>true</multiline>
@@ -988,7 +989,7 @@
 		<area>300,275,450,150</area>
 	    </spinbox>
 	    
-	    <group name="clausegroup" from="baseMsgGroup">
+	    <group name="clausegroup" from="baseMsgGroupWide">
 		<area>770,275,-50,150</area>
 		<textarea name="clausetext" from="msgText">
 		    <!--
@@ -1012,7 +1013,7 @@
 	    </textedit>
 	    
 	    <group name="buttons">
-		<area>360, 785, 1100, 70</area>
+		<area>50%-550, 785, 1100, 70</area>
 
 		<button name="test" from="varbuttoncenter">
 		    <area>0, 0, 25%, 100%</area>

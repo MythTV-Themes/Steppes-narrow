@@ -179,7 +179,7 @@
 	</group>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -199,45 +199,45 @@
 	</group>
 
 	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
+	    <area>35,25,410,680</area>
 	    <filename />
 	    <preserveaspect>true</preserveaspect>
 	</imagetype>
 
 	<buttonlist name="videos" from="episodeList">
+	    <area>480,100,-30,-100</area>
 	    <statetype name="buttonitem">
 		<area>0,0,100%,100%</area>
 
 		<state name="inactive">
 
                     <textarea name="inetref">
-                        <area>15,10,150,55</area>
+                        <area>15,10,150,35</area>
                         <align>top,left</align>
 			<font>myverysmallgrey</font>
                     </textarea>
 
                     <textarea name="rating" from="inetref">
-			<area>100,10,200,55</area>
+			<area>150,10,200,35</area>
                         <align>top,right</align>
                     </textarea>
 
                     <textarea name="length" from="inetref">
-			<area>450,10,200,55</area>
+			<area>450,10,200,35</area>
 			<align>top,hcenter</align>
                     </textarea>
 
 		    <statetype name="videolevel" from="basevideolevel">
-			<position>680,8</position>
+			<position>15,40</position>
 		    </statetype>
 
-		    <textarea name="s##e##" from="basetextarea">
-			<area>100%-200,10,120,55</area>
-			<font>myverysmallnarrowgrey</font>
+		    <textarea name="year" from="rating">
+			<area>100%-100,7,-10,35</area>
 			<align>top,right</align>
-			<multiline>no</multiline>
 		    </textarea>
-		    <textarea name="year" from="s##e##">
-			<area>100%-70,6,-15,55</area>
+
+		    <textarea name="s##e##" from="inetref">
+			<area>100%-100,40,-10,35</area>
 		    </textarea>
 
 		    <textarea name="title" from="titlesubtitle">
@@ -249,14 +249,14 @@
 		<state name="active" from="inactive" />
 
 		<state name="selectedinactive" from="active">
-		    <area>0,0,100%,340</area>
+		    <area>0,0,100%,375</area>
 
 		    <textarea name="titlesubtitle">
 			<area>0,0,0,0</area>
 		    </textarea>
 
 		    <textarea name="description">
-			<area>25,130,-25,-100</area>
+			<area>25,170,-25,-100</area>
 		    </textarea>
 
 		    <group name="details">
@@ -314,13 +314,13 @@
 		    </group>
 
 		    <textarea name="title">
-			<area>20,45,100%,50</area>
+			<area>20,80,100%,50</area>
 			<align>left</align>
 			<font>mylargebold</font>
 			<template>%TITLE%</template>
 		    </textarea>
 		    <textarea name="subtitle">
-			<area>60,88,100%,45</area>
+			<area>60,123,100%,45</area>
 			<align>left</align>
 			<font>mymediumbold</font>
 		    </textarea>
@@ -452,8 +452,8 @@
 			</textarea>
 
 			<textarea name="director" from="rating">
-			    <area>420,100%-38,-420,30</area>
-			    <align>top,hcenter</align>
+			    <area>220,100%-38,-420,30</area>
+			    <align>top,left</align>
 			    <template>Directed by %1</template>
 			</textarea>
 		    </group>
@@ -815,7 +815,7 @@
 	</group>
 
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -835,19 +835,18 @@
 	</group>
 
 	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
+	    <area>35,25,410,680</area>
 	    <filename />
 	    <preserveaspect>true</preserveaspect>
 	</imagetype>
 
 	<buttontree name="videos">
-	    <area>530,120,1360,870</area>
+	    <area>480,120,-30,870</area>
 
 	    <buttonlist name="listtemplate">
 		<arrange>stack</arrange>
 		<align>bottom,left</align>
-		<!-- Put the right edge @ 1890 -->
-		<area>530,120,1360,870</area>
+		<area>480,120,930,870</area>
 		<buttonarea>25,0,100%,100%</buttonarea>
 		<wrapstyle>selection</wrapstyle>
 		<spacing>0</spacing>
@@ -949,11 +948,9 @@
 			    <scroll direction="horizontal" />
 			    <cutdown>no</cutdown>
 			</textarea>
-
 			<group name="extragroup" from="VideoExtraGroup">
 			    <area>0,52,100%,100%</area>
 			</group>
-
 		    </state>
 
 		    <state name="selectedactive" from="selectedinactive" />
@@ -1071,8 +1068,9 @@
 	    <filename>Backgrounds/background.png</filename>
 	</imagetype>
 
+<!--
 	<group name="previewgroup">
-	    <area>48,802,434,255</area>
+	    <area>35,100%-340,410,240</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -1092,13 +1090,14 @@
 	</group>
 
 	<imagetype name="coverart">
-	    <area>35,25,460,680</area>
+	    <area>35,25,410,680</area>
 	    <filename />
 	    <preserveaspect>true</preserveaspect>
 	</imagetype>
+-->
 
 	<group name="form">
-	    <area>520,20,-20,-20</area>
+	    <area>30,20,1380,-20</area>
 
 	    <shape name="background">
 		<area>0,0,100%,100%</area>

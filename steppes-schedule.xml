@@ -11,7 +11,7 @@
 	    <filename />
 	</imagetype>
 	
-	<group name="msggroup" from="baseMsgGroup">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="keyinstr" from="msgText">
 		<font>mysmall</font>
 		<value>(1) Title (2) Priority (4) Type</value>
@@ -20,7 +20,7 @@
 	</group>
 
 	<buttonlist name="programs" from="episodeList">
-	    <area>30,60,-30,870</area>
+	    <area>30,60,-30,-200</area>
 	    <buttonarea>25,0,100%,100%</buttonarea>
 	    <statetype name="buttonitem">
 		<area>0,0,100%,100%</area>
