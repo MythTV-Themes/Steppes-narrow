@@ -15,7 +15,7 @@
 	    </group>
 	</group>
 
-	<group name="msggroup" from="baseMsgGroup">
+	<group name="msggroup" from="baseMsgGroupWide">
 	    <textarea name="label" from="msgText">
 		<value>[R] = Running\n[S] = Stopped</value>
 	    </textarea>
@@ -40,7 +40,7 @@
 	</textarea>
 
 	<group name="details">
-	    <area>50%-690,100,1380,-130</area>
+	    <area>50%-690,100,1380,-200</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -68,12 +68,12 @@
 	    </textarea>
 
 	    <textarea name="label2" from="label1">
-		<area>600,10,345,35</area>
+		<area>450,10,345,35</area>
 		<value>Function</value>
 	    </textarea>
 
 	    <textarea name="label3" from="label1">
-		<area>955,10,-205,35</area>
+		<area>805,10,-205,35</area>
 		<value>Source</value>
 	    </textarea>
 
@@ -94,10 +94,10 @@
 			    <align>left,vcenter</align>
 			</textarea>
 			<textarea name="zmcstatus" from="name">
-			    <area>575,5,345,-5</area>
+			    <area>425,5,345,-5</area>
 			</textarea>
 			<textarea name="zmastatus" from="name">
-			    <area>930,5,-105,-5</area>
+			    <area>780,5,-105,-5</area>
 			</textarea>
 			<textarea name="eventcount" from="name">
 			    <area>100%-200,5,-10,-5</area>
@@ -150,9 +150,9 @@
 	    </buttonlist>
 
 	    <group name="posgroup" from="baseModeGroup">
-		<area>100%-500,20,-50,70</area>
+		<area>20,100%-80,400,70</area>
 		<textarea name="eventno_text" from="pagemode">
-		    <align>center</align>
+		    <align>left,vcenter</align>
 		    <font>mysmall</font>
 		    <extraleading>1</extraleading>
 		    <cutdown>left</cutdown>
@@ -161,7 +161,7 @@
 
 	    <!-- list view -->
 	    <group name="listview">
-		<area>60,100,-60,-90</area>
+		<area>10,100,-10,-90</area>
 
 		<textarea name="layout1_title1" from="labeltext">
 		    <area>35,10,560,35</area>
@@ -170,12 +170,12 @@
 		</textarea>
 
 		<textarea name="layout1_title2" from="layout1_title1">
-		    <area>600,10,345,35</area>
+		    <area>500,10,345,35</area>
 		    <value>Camera</value>
 		</textarea>
 
 		<textarea name="layout1_title3" from="layout1_title1">
-		    <area>955,10,-205,35</area>
+		    <area>855,10,-205,35</area>
 		    <value>Date/Time</value>
 		</textarea>
 
@@ -195,10 +195,10 @@
 				<align>left,vcenter</align>
 			    </textarea>
 			    <textarea name="camera" from="buttontext">
-				<area>575,5,345,-5</area>
+				<area>475,5,345,-5</area>
 			    </textarea>
 			    <textarea name="time" from="buttontext">
-				<area>930,5,-105,-5</area>
+				<area>830,5,-105,-5</area>
 			    </textarea>
 			    <textarea name="length" from="buttontext">
 				<area>100%-200,5,-10,-5</area>
@@ -217,10 +217,10 @@
 
 	    <!-- list preview -->
 	    <group name="preview">
-		<area>60,100,-60,-90</area>
+		<area>10,100,-10,-90</area>
 
 		<buttonlist name="layout2_eventlist" from="basebuttonlist">
-		    <area>200, 50, -200, -10</area>
+		    <area>20, 50, -20, -10</area>
 		    <statetype name="buttonitem">
 			<area>0,0,100%,100%</area>
 			<state name="active">
@@ -280,7 +280,7 @@
 
 	    <!-- gallery -->
 	    <group name="gridview">
-		<area>60,180,-60,-110</area>
+		<area>10,180,-10,-110</area>
 
 		<buttonlist name="layout3_eventlist" from="basegridlist">
 		    <area>0, 0, 100%, 100%</area>
@@ -312,7 +312,7 @@
 	</group>
 
 	<group name="previewgroup">
-	    <area>110,130,824,624</area>
+	    <area>30,130,700,624</area>
 	    <minsize vanish="yes">100%,100%</minsize>
 
 	    <shape name="previewShape">
@@ -345,7 +345,7 @@
         </imagetype>
 
 	<group name="details">
-	    <area>100%-934,130,824,624</area>
+	    <area>100%-700,130,-30,624</area>
 
 	    <shape name="background" from="basewidgetshape">
 		<area>0,0,100%,100%</area>
@@ -491,23 +491,23 @@
 
 	    <!-- two monitor view -->
 	    <textarea name="name2-1" from="name1-1">
-		<area>150,20,315,35</area>
+		<area>35,20,315,35</area>
 		<value>Monitor 1</value>
 	    </textarea>
 	    <textarea name="status2-1" from="status1-1">
-		<area>485,20,315,35</area>
+		<area>355,20,315,35</area>
 	    </textarea>
 	    <imagetype name="frame2-1" from="frame1-1">
-		<area>20,60,900,-20</area>
+		<area>20,60,660,-20</area>
 		<preserveaspect>true</preserveaspect>
 	    </imagetype>
 
 	    <textarea name="name2-2" from="name2-1">
-		<area>50%+135,20,315,35</area>
+		<area>50%+20,20,315,35</area>
 		<value>Monitor 2</value>
 	    </textarea>
 	    <textarea name="status2-2" from="status2-1">
-		<area>50%+470,20,315,35</area>
+		<area>50%+340,20,315,35</area>
 	    </textarea>
 	    <imagetype name="frame2-2" from="frame2-1">
 		<position>50%+10,60</position>
@@ -519,7 +519,7 @@
 	    <textarea name="name3-1" from="name2-1" />
 	    <textarea name="status3-1" from="status2-1" />
 	    <imagetype name="frame3-1" from="frame2-1">
-		<area>20,60,900,400</area>
+		<area>20,60,660,400</area>
 	    </imagetype>
 
 	    <textarea name="name3-2" from="name2-2" />
@@ -529,22 +529,22 @@
 	    </imagetype>
 
 	    <textarea name="name3-3" from="name2-1">
-		<area>150,50%+10,315,35</area>
+		<area>35,50%+10,315,35</area>
 		<value>Monitor 3</value>
 	    </textarea>
 	    <textarea name="status3-3" from="status2-1">
-		<area>485,50%+10,315,35</area>
+		<area>355,50%+10,315,35</area>
 	    </textarea>
 	    <imagetype name="frame3-3" from="frame3-1">
 		<position>20,50%+50</position>
 	    </imagetype>
 
 	    <textarea name="name3-4" from="name2-2">
-		<area>50%+135,50%+10,315,35</area>
+		<area>50%+20,50%+10,315,35</area>
 		<value>Monitor 4</value>
 	    </textarea>
 	    <textarea name="status3-4" from="status2-1">
-		<area>50%+470,50%+10,315,35</area>
+		<area>50%+340,50%+10,315,35</area>
 	    </textarea>
 	    <imagetype name="frame3-4" from="frame3-2">
 		<position>50%+10,50%+50</position>

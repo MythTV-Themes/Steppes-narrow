@@ -47,7 +47,7 @@
     </fontdef>
 
     <fontdef name="mylargenarrow" from="basenarrow">
-	<pixelsize>40</pixelsize>
+	<pixelsize>38</pixelsize>
     </fontdef>
 
     <!--
@@ -173,11 +173,11 @@
     </fontdef>
 
     <fontdef name="mymedium" from="basegothic">
-	<pixelsize>34</pixelsize>
+	<pixelsize>32</pixelsize>
     </fontdef>
 
     <fontdef name="mymediumbold" from="mymedium">
-	<pixelsize>34</pixelsize>
+	<pixelsize>32</pixelsize>
 	<weight>bold</weight>
     </fontdef>
 
@@ -211,7 +211,7 @@
     </fontdef>
 
     <fontdef name="mylarge" from="basegothic">
-	<pixelsize>40</pixelsize>
+	<pixelsize>38</pixelsize>
     </fontdef>
 
     <fontdef name="mylargebold" from="mylarge">
@@ -219,7 +219,7 @@
     </fontdef>
 
     <fontdef name="myextralarge" from="basegothic">
-	<pixelsize>44</pixelsize>
+	<pixelsize>42</pixelsize>
     </fontdef>
 
     <fontdef name="myextralargebold" from="myextralarge">
@@ -1099,6 +1099,11 @@
 	<statetype name="upscrollarrow">
 	    <area>100%-20,50%-25,20,20</area>
 	    <state type="off">
+<!--
+		<imagetype name="upon">
+		    <filename>Images/uparrow-off.png</filename>
+		</imagetype>
+-->
 	    </state>
 	    <state type="full">
 		<imagetype name="upon">

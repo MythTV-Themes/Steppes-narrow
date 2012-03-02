@@ -136,7 +136,7 @@
 	</group>
 
 	<group name="progdetails" from="guideprogdetails">
-	    <area>35,35,410,765</area>
+	    <area>35,35,410,710</area>
 	</group>
 
 	<buttonlist name="channellist">
@@ -238,24 +238,22 @@
 	</guidegrid>
 
 	<group name="previewgroup">
-	    <area>35,100%-340,410,240</area>
-	    <minsize vanish="yes">100%,100%</minsize>
-
+	    <area>35,752,410,240</area>
+	    
 	    <shape name="previewShape">
 		<area>0,0,100%,100%</area>
-		<minsize vanish="yes">100%,100%</minsize>
 		<type>roundbox</type>
 		<cornerradius>5</cornerradius>
 		<fill color="#555555" alpha="255" />
 		<line color="#FFFFFF" alpha="160" width="8" />
 	    </shape>
-
+	    
 	    <imagetype name="video">
-		<area>12,12,-12,-12</area>
-		<minsize vanish="yes">100%,100%</minsize>
+		<area>46,763,388,218</area>
 		<preserveaspect>true</preserveaspect>
 	    </imagetype>
 	</group>
+
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings -> Manual Schedule
@@ -655,8 +653,8 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-	    <area>50,80,-50,-160</area>
-	    <buttonarea>0,0,100%,100%</buttonarea>
+	    <area>20,80,-20,-160</area>
+	    <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
         <textedit name="phrase_edit" from="basewidetextedit">
@@ -759,8 +757,8 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basepopupbuttonlist">
-	    <area>50,90,-50,-20</area>
-	    <buttonarea>0,0,100%,100%</buttonarea>
+	    <area>20,90,-20,-20</area>
+	    <buttonarea>20,0,-20,100%</buttonarea>
         </buttonlist>
 
         <button name="edit_button" from="varbuttonleft" />
