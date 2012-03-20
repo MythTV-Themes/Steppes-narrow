@@ -162,8 +162,8 @@
 
             <buttonlist name="channels" from="basebuttonlist">
                 <!-- arrows space is 25, so to balance use -60 -->
-                <area>30,30,-30,580</area>
-                <buttonarea>0,0,-25,100%</buttonarea>
+                <area>15,30,-15,580</area>
+                <buttonarea>25,0,-25,100%</buttonarea>
 
                 <statetype name="buttonitem">
                     <area>0,0,100%,100%</area>
