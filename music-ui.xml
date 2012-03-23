@@ -186,7 +186,6 @@
             <video name="visualizer">
                 <area>12,12,-12,-12</area>
                 <minsize vanish="yes">100%,100%</minsize>
-                <preserveaspect>true</preserveaspect>
             </video>
         </group>
 
