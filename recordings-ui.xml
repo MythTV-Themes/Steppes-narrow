@@ -13,7 +13,7 @@
         </imagetype>
 
         <imagetype name="coverart">
-            <area>35,25,460,680</area>
+            <area>35,25,410,-450</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
