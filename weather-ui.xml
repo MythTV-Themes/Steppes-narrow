@@ -53,10 +53,14 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-110</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
             <textarea name="observation_time" from="basetextarea">
-                <area>10,100%-110,-10,100</area>
+                <area>10,100%-110,-110,100</area>
                 <multiline>yes</multiline>
                 <align>center</align>
                 <cutdown>yes</cutdown>
@@ -178,8 +182,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
@@ -290,8 +298,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
@@ -464,8 +476,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
@@ -492,8 +508,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
@@ -520,8 +540,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
@@ -553,8 +577,12 @@
         <group name="msggroup">
             <area>75,100%-280,-110,180</area>
             <textarea name="copyright" from="msgText">
-                <area>10,10,-10,-70</area>
+                <area>10,10,-110,-10</area>
             </textarea>
+            <imagetype name="copyrightlogo">
+                <area>100%-105,10,-5,-10</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
         </group>
 
         <group name="details">
