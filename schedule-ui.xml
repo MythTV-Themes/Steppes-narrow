@@ -1092,6 +1092,14 @@
                 <helptext></helptext>
             </button>
 
+            <textarea name="template" from="basetextarea">
+                <area>30,780,-30,-100</area>
+                <font>myverysmall</font>
+                <multiline>yes</multiline>
+                <align>center</align>
+                <template>%Using |TEMPLATE| Template%</template>
+            </textarea>
+
             <button name="cancel" from="varbuttonleft">
                 <value>Cancel</value>
             </button>
