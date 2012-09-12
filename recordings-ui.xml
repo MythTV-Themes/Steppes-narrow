@@ -50,6 +50,10 @@
 
                 <state name="inactive">
 
+                    <statetype name="status">
+                         <state name="disabled" from="error" />
+                    </statetype>
+
                     <shape name="stateshape">
                         <area>45,5,115,32</area>
                         <type>roundbox</type>
@@ -127,6 +131,10 @@
 
                 <state name="selectedinactive">
                     <area>0,0,100%,340</area>
+
+                    <statetype name="status">
+                         <state name="disabled" from="error" />
+                    </statetype>
 
                     <!--
                         <textarea name="filesize_str">
@@ -366,7 +374,9 @@
                 </state>
 
                 <state name="selectedactive" from="selectedinactive">
-                    <statetype name="status" from="itemsSelectedState" />
+                    <statetype name="status" from="itemsSelectedState">
+                         <state name="disabled" from="error" />
+                    </statetype>
                 </state>
 
             </statetype>
