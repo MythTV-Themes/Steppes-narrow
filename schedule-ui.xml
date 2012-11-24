@@ -1602,6 +1602,9 @@
                         -->
                         <align>left,vcenter</align>
                     </textarea>
+                    <textarea name="titlesubtitle">
+                        <area>20,100%-42,-20,35</area>
+                    </textarea>
                 </state> <!-- inactive -->
 
                 <state name="active" from="inactive" />
@@ -1639,8 +1642,8 @@
                     </textarea>
 
                     <textarea name="rectypestatus">
-                        <area>30,100%-39,50%-10,32</area>
-                        <align>left</align>
+                        <area>30,100%-40,400,32</area>
+                        <align>left,bottom</align>
                         <font>myverysmall</font>
                         <font state="running">myverysmallgreen</font>
                         <font state="disabled">myverysmallgrey</font>
@@ -1649,8 +1652,8 @@
                         <font state="warning">myverysmallorange</font>
                     </textarea>
                     <textarea name="programid" from="basetextarea">
-                        <area>60,280,-25,-10</area>
-                        <align>left</align>
+                        <area>440,100%-40,210,32</area>
+                        <align>hcenter,bottom</align>
                         <font>myverysmall</font>
                     </textarea>
                 </state> <!-- selectedinactive -->
