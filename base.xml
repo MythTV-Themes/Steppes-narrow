@@ -1680,10 +1680,22 @@
                 <line color="#00FFFF" alpha="160" width="0" />
             </shape>
             <textarea name="description" from="msgText">
-                <area>10,10,-10,-10</area>
+                <area>10,10,-10,-42</area>
                 <font>mysmall</font>
                 <align>left,top</align>
                 <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
+            </textarea>
+            <textarea name="syndicatedepisode" depends="!s00e00">
+                <area>20,100%-39,-210,32</area>
+                <font>mylabelfont</font>
+                <align>left,bottom</align>
+                <template>%|[SYNDICATEDEPISODE|]%</template>
+            </textarea>
+            <textarea name="parttotal" depends="partnumber">
+                <area>100%-200,100%-39,-20,32</area>
+                <align>right</align>
+                <font>mylabelfont</font>
+                <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
             </textarea>
         </group>
     </group>
@@ -1750,14 +1762,14 @@
 
         <textarea name="channel">
             <area>0,35,240,35</area>
-            <font>mysmallnarrowgrey</font>
+            <font>mylabelfont</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="originalairdate">
             <area>250,35,-260,35</area>
             <align>left</align>
-            <font>mysmallnarrowgrey</font>
+            <font>mylabelfont</font>
             <template>(%1)</template>
             <cutdown>no</cutdown>
         </textarea>
@@ -1765,18 +1777,23 @@
         <textarea name="year">
             <area>250,35,-260,35</area>
             <align>center</align>
-            <font>mysmallnarrowgrey</font>
+            <font>mylabelfont</font>
             <template>(%1)</template>
         </textarea>
 
         <textarea name="filesize_str">
             <area>100%-125,35,100%,35</area>
-            <font>mysmallnarrowgrey</font>
+            <font>mylabelfont</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="s00e00" from="filesize_str">
             <area>100%-255,35,125,35</area>
+        </textarea>
+
+        <textarea name="syndicatedepisode" from="filesize_str" depends="!s00e00">
+            <area>100%-255,35,125,35</area>
+            <template>%|[SYNDICATEDEPISODE|]%</template>
         </textarea>
     </group>
 
@@ -1907,7 +1924,7 @@
                 </group>
 
                 <textarea name="titlesubtitle">
-                    <area>20,100%-42,-20,35</area>
+                    <area>20,100%-42,-160,35</area>
                     <align>left</align>
                     <font>mymedium</font>
                 </textarea>
@@ -1939,6 +1956,9 @@
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
                     <scroll direction="horizontal" />
+<!--
+                    <template>%SUBTITLE%%  #|PARTNUMBER|/%%PARTTOTAL%</template>
+-->
                 </textarea>
 
                 <textarea name="description">
@@ -1949,6 +1969,14 @@
                     <cutdown>yes</cutdown>
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
                 </textarea>
+
+                <textarea name="parttotal" depends="partnumber">
+                    <area>100%-250,100%-39,230,32</area>
+                    <align>right,vcenter</align>
+                    <font>mylabelfont</font>
+                    <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
+                </textarea>
+
             </state>
 
             <state name="selectedactive" from="selectedinactive">
