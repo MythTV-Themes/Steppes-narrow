@@ -1948,14 +1948,14 @@
                     <align>left</align>
                     <font>mylargebold</font>
                     <cutdown>no</cutdown>
-                    <scroll direction="horizontal" />
+                    <scroll direction="horizontal" returnrate="140" returndelay="4" />
                 </textarea>
                 <textarea name="subtitle">
                     <area>60,123,-15,55</area>
                     <align>left</align>
                     <font>mymediumbold</font>
                     <cutdown>no</cutdown>
-                    <scroll direction="horizontal" />
+                    <scroll direction="horizontal" returnrate="140" returndelay="4" />
 <!--
                     <template>%SUBTITLE%%  #|PARTNUMBER|/%%PARTTOTAL%</template>
 -->
@@ -2145,7 +2145,7 @@
             <area>20,10,-20,40%+10</area>
             <multiline>yes</multiline>
             <align>center</align>
-            <scroll direction="vertical" />
+            <scroll direction="vertical" rate="15" returnrate="35" startdelay="4" returndelay="4" />
         </textarea>
 
         <buttonlist name="list" from="basepopupbuttonlist">

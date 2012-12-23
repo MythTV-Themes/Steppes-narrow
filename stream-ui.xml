@@ -98,12 +98,12 @@
                     <state name="selectedinactive" from="inactive">
                         <textarea name="station">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="genre">
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
 
@@ -262,14 +262,14 @@
                         <textarea name="title">
                             <multiline>no</multiline>
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
 
                         <textarea name="artist">
                             <area>830,10,-160,-5</area>
                             <multiline>no</multiline>
                             <cutdown>no</cutdown>
-                            <scroll direction="horizontal" />
+                            <scroll direction="horizontal" returnrate="140" returndelay="4" />
                         </textarea>
                     </state>
 
@@ -345,14 +345,14 @@
                 <area>40,15,-70,45</area>
                 <font>mylarge</font>
                 <cutdown>no</cutdown>
-                <scroll direction="horizontal" />
+                <scroll direction="horizontal" returnrate="140" returndelay="4" />
             </textarea>
 
             <textarea name="artist" from="basetextarea">
                 <area>40,60,-70,40</area>
                 <font>mymedium</font>
                 <cutdown>no</cutdown>
-                <scroll direction="horizontal" />
+                <scroll direction="horizontal" returnrate="140" returndelay="4" />
             </textarea>
 
             <textarea name="channel" from="basetextarea">
@@ -377,7 +377,7 @@
                 <font>mysmallnarrow</font>
                 <align>left,bottom</align>
                 <cutdown>no</cutdown>
-                <scroll direction="horizontal" />
+                <scroll direction="horizontal" returnrate="140" returndelay="4" />
             </textarea>
 
             <group name="actionstategroup" from="baseactionstategroup">
