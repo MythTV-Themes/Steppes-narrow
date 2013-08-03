@@ -382,74 +382,7 @@
             <textarea name="filter" from="pagemode" />
         </group>
 
-        <buttonlist name="schedules" from="episodeList">
-            <statetype name="buttonitem">
-                <state name="active">
-                    <group name="progstats">
-                        <textarea name="syndicatedepisode" depends="!s00e00">
-                            <area>100%-145,35,100%,35</area>
-                        </textarea>
-                        <textarea name="filesize_str">
-                            <area>0,0,0,0</area>
-                        </textarea>
-                    </group>
-                    <textarea name="titlesubtitle">
-                        <area>20,100%-42,-20,35</area>
-                    </textarea>
-                    <textarea name="card">
-                        <area>30,6,60,35</area>
-                        <font>mysmallgrey</font>
-                        <font state="running">mysmallgreen</font>
-                        <font state="disabled">mysmallgrey</font>
-                        <font state="error">mysmallred</font>
-                        <font state="normal">mysmallblue</font>
-                        <font state="warning">mysmallorange</font>
-                        <align>hcenter</align>
-                        <template>(%1)</template>
-                    </textarea>
-                </state>
-
-                <state name="inactive" from="active" />
-
-                <state name="selectedinactive">
-                    <group name="progstats">
-                        <textarea name="syndicatedepisode" depends="!s00e00">
-                            <area>100%-145,35,100%,35</area>
-                        </textarea>
-                        <textarea name="filesize_str">
-                            <area>0,0,0,0</area>
-                        </textarea>
-                    </group>
-                    <textarea name="rectypestatus">
-                        <area>30,100%-39,50%-10,32</area>
-                        <align>left</align>
-                        <font>myverysmall</font>
-                        <font state="running">myverysmallgreen</font>
-                        <font state="disabled">myverysmallgrey</font>
-                        <font state="error">myverysmallred</font>
-                        <font state="normal">myverysmallblue</font>
-                        <font state="warning">myverysmallorange</font>
-                    </textarea>
-
-                    <textarea name="card">
-                        <area>30,8,60,35</area>
-                        <font>mysmallgrey</font>
-                        <font state="running">mysmallgreen</font>
-                        <font state="disabled">mysmallgrey</font>
-                        <font state="error">mysmallred</font>
-                        <font state="normal">mysmallblue</font>
-                        <font state="warning">mysmallorange</font>
-                        <align>hcenter</align>
-                        <template>(%1)</template>
-                    </textarea>
-                </state>
-
-                <state name="selectedactive" from="selectedinactive">
-                    <statetype name="status" from="itemsSelectedState" />
-                </state>
-            </statetype>
-        </buttonlist>
-
+        <buttonlist name="schedules" from="scheduleList" />
         <buttonlist name="groups" from="groupsList">
             <area>30,0,420,-250</area>
         </buttonlist>
@@ -792,72 +725,7 @@
             <textarea name="curview" from="pagemode" />
         </group>
 
-        <buttonlist name="proglist" from="episodeList">
-            <statetype name="buttonitem">
-                <state name="active">
-                    <group name="progstats">
-                        <textarea name="syndicatedepisode" depends="!s00e00">
-                            <area>100%-145,35,100%,35</area>
-                        </textarea>
-                        <textarea name="filesize_str">
-                            <area>0,0,0,0</area>
-                        </textarea>
-                    </group>
-                    <textarea name="card">
-                        <area>40,6,60,35</area>
-                        <font>mysmallgrey</font>
-                        <font state="running">mysmallgreen</font>
-                        <font state="disabled">mysmallgrey</font>
-                        <font state="error">mysmallred</font>
-                        <font state="normal">mysmallblue</font>
-                        <font state="warning">mysmallorange</font>
-                        <align>top,hcenter</align>
-                        <template>(%1)</template>
-                    </textarea>
-                </state>
-
-                <state name="inactive" from="active" />
-
-                <state name="selectedinactive">
-                    <group name="progstats">
-                        <textarea name="syndicatedepisode" depends="!s00e00">
-                            <area>100%-145,35,100%,35</area>
-                        </textarea>
-                        <textarea name="filesize_str">
-                            <area>0,0,0,0</area>
-                        </textarea>
-                    </group>
-                    <textarea name="rectypestatus">
-                        <area>20,100%-41,-270,-8</area>
-                        <align>left</align>
-                        <font>myverysmall</font>
-                        <font state="running">myverysmallgreen</font>
-                        <font state="disabled">myverysmallgrey</font>
-                        <font state="error">myverysmallred</font>
-                        <font state="normal">myverysmallblue</font>
-                        <font state="warning">myverysmallorange</font>
-                    </textarea>
-
-                    <textarea name="card">
-                        <area>40,8,60,35</area>
-                        <font>mysmallgrey</font>
-                        <font state="running">mysmallgreen</font>
-                        <font state="disabled">mysmallgrey</font>
-                        <font state="error">mysmallred</font>
-                        <font state="normal">mysmallblue</font>
-                        <font state="warning">mysmallorange</font>
-                        <align>top,hcenter</align>
-                        <template>(%1)</template>
-                    </textarea>
-                </state>
-
-                <state name="selectedactive" from="selectedinactive">
-                    <statetype name="status" from="itemsSelectedState" />
-                </state>
-
-            </statetype>
-        </buttonlist>
-
+        <buttonlist name="proglist" from="scheduleList" />
     </window>
 
     <!-- Home -> Media Library -> Watch Recordings
@@ -933,7 +801,7 @@
             <wrapstyle>selection</wrapstyle>
         </buttonlist>
 
-        <buttonlist name="times" from="episodeList" />
+        <buttonlist name="times" from="scheduleList" />
     </window>
 
     <!-- Home -> Manage Recordings -> Schedule Recordings -> Custom Record
