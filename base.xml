@@ -95,6 +95,10 @@
     </fontdef>
 
     <fontdef name="mysmallnarrowyellow" from="mysmallnarrow">
+        <color>#FFFF00</color>
+    </fontdef>
+
+    <fontdef name="mysmallnarroworange" from="mysmallnarrow">
         <color>#FF9147</color>
     </fontdef>
 
@@ -115,7 +119,7 @@
     </fontdef>
 
     <fontdef name="myverysmallnarrowyellow" from="myverysmallnarrow">
-        <color>#FFFF33</color>
+        <color>#FFFF00</color>
     </fontdef>
 
     <fontdef name="myverysmallnarroworange" from="myverysmallnarrow">
@@ -199,7 +203,7 @@
     </fontdef>
 
     <fontdef name="mymediumyellow" from="mymedium">
-        <color>#FFFF33</color>
+        <color>#FFFF00</color>
     </fontdef>
 
     <fontdef name="mymediumorange" from="mymedium">
@@ -269,6 +273,10 @@
     </fontdef>
 
     <fontdef name="mysmallyellow" from="mysmall">
+        <color>#FFFF00</color>
+    </fontdef>
+
+    <fontdef name="mysmallorange" from="mysmall">
         <color>#FF9147</color>
     </fontdef>
 
@@ -305,7 +313,7 @@
     </fontdef>
 
     <fontdef name="myverysmallyellow" from="myverysmall">
-        <color>#FFFF33</color>
+        <color>#FFFF00</color>
     </fontdef>
 
     <fontdef name="myverysmallorange" from="myverysmall">
@@ -477,7 +485,7 @@
         <font state="disabled">mysmallnarrowlightgrey</font>
         <font state="error">mysmallnarrowred</font>
         <font state="normal">mysmallnarrow</font>
-        <font state="warning">mysmallnarrowyellow</font>
+        <font state="warning">mysmallnarroworange</font>
         <font state="selected">mysmallnarrowbold</font>
     </textarea>
 
