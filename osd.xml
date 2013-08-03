@@ -1009,22 +1009,24 @@
         <buttonlist name="list">
             <arrange>stack</arrange>
             <align>center</align>
-            <area>15,190,-15,-20</area>
+            <area>12,190,-12,-20</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
             <wrapstyle>selection</wrapstyle>
-            <buttonarea>15,0,-15,100%</buttonarea>
+            <buttonarea>20,0,-20,100%</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,100%,90</area>
                 <state name="active">
                     <area>0,0,100%,90</area>
                     <shape name="background">
-                        <area>7,0,-7,100%</area>
+                        <area>10,0,-11,100%</area>
                         <fill color="#505050" alpha="96" />
                         <line color="#00FFFF" width="1" />
                         <type>roundbox</type>
                         <cornerradius>20</cornerradius>
                     </shape>
+                    <shape name="highlightleft" />
+                    <shape name="highlightright" />
                     <textarea name="buttontext">
                         <area>25,5,-25,-5</area>
                         <cutdown>yes</cutdown>
@@ -1033,7 +1035,7 @@
                         <font>small</font>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <area>100%-22,50%-7,15,15</area>
+                        <area>100%-30,50%-7,15,15</area>
                         <filename>Images/rightarrow-on.png</filename>
                     </imagetype>
                 </state>
@@ -1041,11 +1043,23 @@
                 </state>
                 <state name="selectedactive" from="selectedinactive">
                     <shape name="background">
-                        <area>0,0,100%,100%</area>
+                        <area>4,0,-5,100%</area>
                         <fill color="#505050" alpha="96" />
                         <line color="#50EFDF" alpha="255" width="5" />
                         <type>roundbox</type>
                         <cornerradius>20</cornerradius>
+                    </shape>
+                    <shape name="highlightleft">
+                        <area>0,20,5,-20</area>
+                        <type>roundbox</type>
+                        <fill color="#50EFDF" alpha="255" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <shape name="highlightright">
+                        <area>100%-6,20,5,-20</area>
+                        <type>roundbox</type>
+                        <fill color="#50EFDF" alpha="255" />
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
 
