@@ -164,6 +164,10 @@
         <color>#A0BFFF</color>
     </fontdef>
 
+    <fontdef name="mylabelfontnarrow" from="mynarrow">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <fontdef name="mylabelfontsmall" from="myverysmall">
         <color>#A0BFFF</color>
     </fontdef>
@@ -247,7 +251,6 @@
         <color>#DADADA</color>
     </fontdef>
 
-
     <fontdef name="mysmallblack" from="mysmall">
         <color>#000000</color>
     </fontdef>
@@ -274,10 +277,6 @@
 
     <fontdef name="mysmallyellow" from="mysmall">
         <color>#FFFF00</color>
-    </fontdef>
-
-    <fontdef name="mysmallorange" from="mysmall">
-        <color>#FF9147</color>
     </fontdef>
 
     <fontdef name="mysmallboldgreen" from="mysmallgreen">
@@ -1862,6 +1861,7 @@
 
         <textarea name="syndicatedepisode" from="filesize_str" depends="!s00e00">
             <area>100%-255,35,125,35</area>
+            <font>mylabelfontnarrow</font>
             <template>%|[SYNDICATEDEPISODE|]%</template>
         </textarea>
     </group>
@@ -2215,6 +2215,7 @@
             <multiline>yes</multiline>
             <align>center</align>
             <scroll direction="vertical" rate="15" returnrate="35" startdelay="4" returndelay="4" />
+            <cutdown>false</cutdown>
         </textarea>
 
         <buttonlist name="list" from="basepopupbuttonlist">
