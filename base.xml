@@ -1715,7 +1715,7 @@
                 <align>left,bottom</align>
                 <template>%|[SYNDICATEDEPISODE|]%</template>
             </textarea>
-            <textarea name="parttotal" depends="partnumber">
+            <textarea name="parttotal">
                 <area>100%-200,100%-39,-20,32</area>
                 <align>right</align>
                 <font>mylabelfont</font>
@@ -2039,7 +2039,7 @@
                     <template>%|RATING| %%|(STARS|) %%DESCRIPTION%</template>
                 </textarea>
 
-                <textarea name="parttotal" depends="partnumber">
+                <textarea name="parttotal">
                     <area>100%-250,100%-39,230,32</area>
                     <align>right,vcenter</align>
                     <font>mylabelfont</font>
