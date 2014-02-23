@@ -2193,7 +2193,7 @@
     </group>
 
     <group name="PopupGroup">
-        <area>-1,-1,1250,1000</area>
+        <area>50%-650,50,1300,980</area>
 
         <minsize shrink="short">100%,60</minsize>
 
@@ -2202,6 +2202,7 @@
             <minsize shrink="short">100%,60</minsize>
         </shape>
 
+<!--
         <textarea name="title" from="basetextarea">
             <area>20,30,-20,35</area>
             <minsize shrink="short" >100%,60</minsize>
@@ -2209,10 +2210,11 @@
             <align>top,hcenter</align>
             <font>mymedium</font>
         </textarea>
+-->
 
         <group name="PopupGroupMessage">
-
-            <area>20,90,-20,-30</area>
+            <!-- set y=90 if using title -->
+            <area>20,30,-20,-30</area>
             <minsize shrink="short">100%,60</minsize>
 
             <shape name="textbackground">
@@ -2253,7 +2255,6 @@
     <!-- Home -> [Esc]
     -->
     <window name="MythPopupBox">
-        <area>-1,-1,1250,1000</area>
         <group name="items" from="PopupGroup" />
     </window>
 
@@ -2261,22 +2262,8 @@
          -> <select a show and hit enter>
     -->
     <window name="MythDialogBox">
-        <area>-1,-1,1250,1000</area>
-        <group name="items" from="PopupGroup">
-            <group name="PopupGroupMessage">
-                <shape name="textbackground">
-                    <area>20,0,50%,100%</area>
-                </shape>
-                <textarea name="messagearea">
-                    <area>20,5,50%,-10</area>
-                </textarea>
-                <buttonlist name="list">
-                    <area>50%+30,10,-10,-10</area>
-                </buttonlist>
-            </group>
-        </group>
+        <group name="items" from="PopupGroup" />
     </window>
-
 
     <!-- Home -> Setup -> Theme Chooser -> 'M'(enu)
          -> Refresh Downloadable Themes

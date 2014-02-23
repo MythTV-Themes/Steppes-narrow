@@ -425,7 +425,6 @@
          -> 'M'(enu) -> Storage Options -> Change Recording Group
     -->
     <window name="groupselector">
-        <area>-1,-1,1270,1000</area>
         <group name="items" from="PopupGroup">
             <group name="PopupGroupMessage">
                 <shape name="textbackground" />
