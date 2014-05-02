@@ -1041,6 +1041,18 @@
         </group>
 
         <group name="progdetails" from="guideprogdetails" />
+
+        <group name="activefiltersgroup">
+            <area>40,480,400,-80</area>
+            <minsize vanish="true">500,60</minsize>
+
+            <buttonlist name="activefilters" from="baseinfobuttonlist">
+                <area>30,110,-30,-60</area>
+                <align>bottom,hcenter</align>
+                <minsize vanish="true" shrink="short" initiator="yes">500,60</minsize>
+                <wrapstyle>none</wrapstyle>
+            </buttonlist>
+        </group>
     </window>
 
 
@@ -1190,7 +1202,7 @@
             </textarea>
 
             <buttonlist name="filters" from="basechecklist">
-                <area>30,150,-30,610</area>
+                <area>30,150,-30,-30</area>
                 <wrapstyle>none</wrapstyle>
             </buttonlist>
 
@@ -1622,4 +1634,3 @@
     </window>
 
 </mythuitheme>
-
