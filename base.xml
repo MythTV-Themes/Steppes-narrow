@@ -2104,7 +2104,7 @@
                     <state name="recording">
                         <imagetype name="animation">
                             <area>13,10,32,32</area>
-                            <filepattern low="1" high="30">Images/Recording/recording.%1.png</filepatt
+                            <filepattern low="1" high="30">Images/Recording/recording.%1.png</filepattern>
                             <delay>70</delay>
                         </imagetype>
                     </state>
