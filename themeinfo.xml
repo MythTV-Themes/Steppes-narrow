@@ -17,8 +17,8 @@
     <baseres>1440x1080</baseres>
 
     <version>
-        <major>1</major>
-        <minor>6</minor>
+        <major>27</major>
+        <minor>40</minor>
     </version>
 
     <detail>
@@ -27,6 +27,6 @@
             <thumbnail name="osdpreview">osd_preview.jpg</thumbnail>
         -->
         <description>Designed to show off some different element arrangements.  Reminder: On Watch Recordings screen [Rew] and [FF] can be used to change the Rec. Group.</description>
-        <errata>Requires Myth from 2014-05-07</errata>
+        <errata></errata>
     </detail>
 </themeinfo>
