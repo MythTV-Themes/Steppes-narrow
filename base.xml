@@ -1971,7 +1971,7 @@
     <buttonlist name="itemsList">
         <arrange>stack</arrange>
         <align>bottom,left</align>
-        <area>480,130,-30,-100</area>
+        <area>480,90,-30,-100</area>
         <buttonarea>25,0,100%,100%</buttonarea>
         <wrapstyle>selection</wrapstyle>
         <spacing>0</spacing>
@@ -1979,7 +1979,7 @@
         <showscrollbar>yes</showscrollbar>
 
         <group name="bar" from="basescrollgroup">
-            <area>10, 70, 12, -35</area>
+            <area>10, 80, 12, -35</area>
         </group>
 
         <statetype name="buttonitem">
