@@ -1570,25 +1570,25 @@
 
         <statetype name="buttonitem">
             <area>0,0,400,100%</area>
-            <minsize>50,100%</minsize>
+            <minsize>30,100%</minsize>
 
             <state name="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>50,100%</minsize>
+                <minsize>30,100%</minsize>
                 <group name="areagroup">
-                    <area>0,7,100%,-7</area>
-                    <minsize>50,100%</minsize>
+                    <area>0,8,100%,-8</area>
+                    <minsize>30,100%</minsize>
                     <shape name="recGroupShape">
                         <area>0,0,100%,100%</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>30,100%</minsize>
                         <type>roundbox</type>
-                        <line color="#00FFFF" alpha="96" width="3" />
+                        <line color="#00FFFF" alpha="96" width="2" />
                         <fill color="#000000" alpha="144" />
                         <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="buttontext">
                         <area>15,5,-15,-5</area>
-                        <minsize>50,100%</minsize>
+                        <minsize>30,100%</minsize>
                         <extraleading>4</extraleading>
                         <align>center</align>
                         <cutdown>yes</cutdown>
@@ -1604,31 +1604,28 @@
 
             <state name="selectedinactive" from="inactive">
                 <area>0,0,100%,100%</area>
-                <minsize>50,100%</minsize>
+                <minsize>30,100%</minsize>
                 <group name="areagroup">
-                    <area>0,0,100%,100%</area>
-                    <minsize>50,100%</minsize>
+                    <area>0,2,100%,-2</area>
+                    <minsize>30,100%</minsize>
                     <shape name="recGroupShape">
-                        <area>0,4,100%,-5</area>
-                        <minsize>50,100%</minsize>
+                        <area>0,4,100%,-4</area>
+                        <minsize>30,100%</minsize>
                         <type>roundbox</type>
-                        <cornerradius>350</cornerradius>
                         <line color="#50EFDF" alpha="250" width="4" />
                         <fill color="#000000" alpha="160" />
                     </shape>
                 </group>
                 <shape name="highlighttop">
-                    <area>22,0,-22,5</area>
+                    <area>22,0,-22,4</area>
                     <minsize>10,9</minsize>
-                    <type>roundbox</type>
-                    <cornerradius>80</cornerradius>
+                    <type>ellipse</type>
                     <fill color="#50EFDF" alpha="250" />
                 </shape>
                 <shape name="highlightbottom">
-                    <area>22,100%-6,-22,5</area>
+                    <area>22,100%-4,-22,4</area>
                     <minsize>10,9</minsize>
-                    <type>roundbox</type>
-                    <cornerradius>80</cornerradius>
+                    <type>ellipse</type>
                     <fill color="#50EFDF" alpha="250" />
                 </shape>
             </state>
