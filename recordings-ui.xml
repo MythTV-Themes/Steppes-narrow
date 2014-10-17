@@ -403,17 +403,16 @@
             <area>35,100%-340,410,240</area>
             <minsize vanish="yes">100%,100%</minsize>
 
-            <shape name="previewShape">
+            <shape name="previewBackground">
                 <area>0,0,100%,100%</area>
                 <minsize vanish="yes">100%,100%</minsize>
                 <type>roundbox</type>
                 <cornerradius>5</cornerradius>
                 <fill color="#555555" alpha="255" />
-                <line color="#FFFFFF" alpha="160" width="8" />
             </shape>
 
             <imagetype name="preview">
-                <area>12,12,-12,-12</area>
+                <area>6,6,-6,-6</area>
                 <minsize vanish="yes">100%,100%</minsize>
                 <preserveaspect>true</preserveaspect>
             </imagetype>

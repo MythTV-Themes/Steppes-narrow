@@ -45,16 +45,7 @@
             <font>mymedium</font>
         </textarea>
 
-        <buttonlist name="images" from="basegridlist">
-            <area>70,90,-70,-50</area>
-            <spacing>2</spacing>
-            <statetype name="upscrollarrow">
-                <area>100%-20,50%-25,20,20</area>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <area>100%-20,50%+5,20,20</area>
-            </statetype>
-        </buttonlist>
+        <buttonlist name="images" from="basegridlist" />
     </window>
 
     <!-- Home -> Media Library -> Image Gallery -> 'M'(enu)
