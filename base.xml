@@ -2313,7 +2313,7 @@
     </group>
 
     <group name="PopupGroup">
-        <area>50%-650,50,1300,980</area>
+        <area>50%-650,-1,1300,980</area>
 
         <minsize shrink="short">100%,60</minsize>
 
@@ -2359,13 +2359,13 @@
         <wrapstyle>selection</wrapstyle>
         <layout>vertical</layout>
 
-        <area>630,10,-10,-10</area>
+        <area>600,10,-10,-10</area>
         <minsize shrink="short" initiator="yes">100%,60</minsize>
         <buttonarea>20,0,-20,100%</buttonarea>
 
         <statetype name="buttonitem">
 
-            <area>20,0,620,220</area>
+            <area>20,0,600,220</area>
 
             <state name="selectedactive">
                 <area>0,0,100%,100%</area>
