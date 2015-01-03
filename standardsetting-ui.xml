@@ -173,7 +173,7 @@
         </buttonlist>
 
         <group name="help" from="baseMsgGroup">
-            <area>150,100%-210,-150,120</area>
+            <area>50,100%-210,-50,120</area>
             <textarea name="selectedsettinghelp" from="msgText" />
         </group>
 
