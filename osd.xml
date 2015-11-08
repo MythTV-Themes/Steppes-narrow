@@ -301,6 +301,7 @@
         </fontdef>
         <fontdef name="smallnarrow" face="Liberation Sans Narrow">
             <pixelsize>26</pixelsize>
+            <stretch>condensed</stretch>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -611,6 +612,7 @@
         </fontdef>
         <fontdef name="smallnarrow" face="Liberation Sans Narrow">
             <pixelsize>26</pixelsize>
+            <stretch>condensed</stretch>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
