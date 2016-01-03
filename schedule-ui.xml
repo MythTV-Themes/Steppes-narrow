@@ -419,35 +419,41 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
 
-                    <textarea name="chanstr" from="basetextarea">
-                        <area>120,10,120,35</area>
+                    <textarea name="callsign" from="basetextarea">
+                        <area>120,10,700,35</area>
+                        <align>center</align>
+                    </textarea>
+
+                    <textarea name="chanstr" from="callsign">
+                        <area>830,10,150,35</area>
                         <font>mysmall</font>
                         <align>vcenter,right</align>
                     </textarea>
 
-                    <textarea name="callsign" from="chanstr">
-                        <area>240,10,240,35</area>
-                        <align>center</align>
+                    <textarea name="channelsourcename" from="chanstr">
+                        <area>990,10,-20,35</area>
                     </textarea>
 
                     <textarea name="channelname" from="callsign">
-                        <area>490,10,-20,35</area>
-                        <value>name</value>
+                        <area>120,100%-40,700,35</area>
                     </textarea>
 
-                    <textarea name="channelsourcename" from="callsign">
-                        <area>120,100%-40,360,35</area>
+                    <textarea name="recprioritylabel" from="chanstr">
+                        <area>830,100%-40,220,35</area>
+                        <value>Current:</value>
                     </textarea>
 
-                    <textarea name="recprioritylabel" from="callsign">
-                        <area>100%-350,100%-40,280,35</area>
-                        <align>right,vcenter</align>
-                        <value>Priority:</value>
+                    <textarea name="channelrecpriority" from="chanstr">
+                        <area>1060,100%-40,60,35</area>
                     </textarea>
 
-                    <textarea name="channelrecpriority" from="callsign">
-                        <area>100%-70,100%-40,-20,35</area>
-                        <align>right,vcenter</align>
+                    <textarea name="newlabel" from="chanstr">
+                        <area>1130,100%-40,120,35</area>
+                        <value>New:</value>
+                    </textarea>
+
+                    <textarea name="priority" from="chanstr">
+                        <area>1260,100%-40,-20,35</area>
                     </textarea>
                 </state>
                 <state name="active" from="inactive" />
