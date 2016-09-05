@@ -139,6 +139,10 @@
         <color>#DDDDDD</color>
     </fontdef>
 
+    <fontdef name="myverysmallnarrowlabel" from="myverysmallnarrow">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <!-- Monospace -->
 
     <fontdef name="mysmallmono" from="basemono">
@@ -1109,6 +1113,88 @@
             </state>
         </statetype>
     </buttonlist>
+
+    <buttonlist name="basevaluebuttonlist">
+        <arrange>stack</arrange>
+        <align>top</align>
+        <area>0,20,600,720</area>
+        <layout>vertical</layout>
+        <spacing>5</spacing>
+        <buttonarea>20,0,-25,100%</buttonarea>
+
+        <statetype name="buttonitem">
+            <area>0,0,100%,180</area>
+            <minsize shrink="short">100%,5</minsize>
+
+            <state name="active">
+                <area>0,0,100%,120</area>
+                <minsize shrink="short">100%,6</minsize>
+                <shape name="background">
+                    <!-- work around a stack / minsize display bug by using
+                         empty image to help spacing -->
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,5</minsize>
+                </shape>
+                <textarea name="name" from="basetextarea">
+                    <area>5,3,30%,-3</area>
+                    <minsize shrink="short">100%,5</minsize>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <align>top,right</align>
+                    <font>myverysmallnarrowlabel</font>
+                </textarea>
+                <textarea name="sep">
+                    <area>31%,3,10,-3</area>
+                    <minsize shrink="short">100%,5</minsize>
+                    <align>top,left</align>
+                    <value>:</value>
+                    <font>myverysmallnarrowlabel</font>
+                </textarea>
+                <textarea name="value">
+                    <area>31%+15,3,-10,-3</area>
+                    <minsize shrink="short">100%,5</minsize>
+                    <multiline>yes</multiline>
+                    <cutdown>no</cutdown>
+                    <align>top,left</align>
+                    <font>myverysmallnarrow</font>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active" />
+            <state name="selectedinactive" from="active" />
+            <state name="disabled" from="active">
+                <textarea name="name">
+                    <font>myverysmallnarrowlightgrey</font>
+                </textarea>
+                <textarea name="value">
+                    <font>myverysmallnarrowlightgrey</font>
+                </textarea>
+            </state>
+        </statetype>
+
+        <group name="bar" from="basescrollgroup">
+            <area>100%-20,30,15,-30</area>
+        </group>
+    </buttonlist>
+
+    <group name="basevaluelistgroup">
+        <area>100%-720,20,-30,-20</area>
+
+        <shape name="background">
+            <area>10,0,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>15</cornerradius>
+            <line color="#00FFFF" alpha="240" width="1" />
+            <fill color="#000000" alpha="128" />
+        </shape>
+
+        <buttonlist name="valuelist" from="basevaluebuttonlist">
+            <area>5,5,-5,-5</area>
+            <wrapstyle>none</wrapstyle>
+            <statetype name="buttonitem">
+                <state name="selectedinactive" from="active" />
+            </statetype>
+        </buttonlist>
+    </group>
 
     <!-- Base definition of a generic button list -->
     <buttonlist name="basebuttonlist">
