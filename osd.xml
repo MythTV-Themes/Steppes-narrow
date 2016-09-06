@@ -299,12 +299,9 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="smallnarrow" face="Liberation Sans Narrow">
-            <pixelsize>26</pixelsize>
-            <stretch>condensed</stretch>
+        <fontdef name="smallblack" face="Liberation Sans Narrow">
+            <pixelsize>25</pixelsize>
             <color>#000000</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smallinfo" from="small">
             <color>#A0BFFF</color>
@@ -388,7 +385,7 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="callsign">
-            <font>smallnarrow</font>
+            <font>smallblack</font>
             <area>10,315,200,-10</area>
             <align>center</align>
             <multiline>yes</multiline>
@@ -610,12 +607,9 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <fontdef name="smallnarrow" face="Liberation Sans Narrow">
-            <pixelsize>26</pixelsize>
-            <stretch>condensed</stretch>
+        <fontdef name="smallblack" face="Liberation Sans Narrow">
+            <pixelsize>25</pixelsize>
             <color>#000000</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smallinfo" from="small">
             <color>#A0BFFF</color>
@@ -699,7 +693,7 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <textarea name="callsign">
-            <font>smallnarrow</font>
+            <font>smallblack</font>
             <area>10,315,200,-10</area>
             <align>center</align>
             <multiline>yes</multiline>
