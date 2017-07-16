@@ -51,6 +51,10 @@
         <pixelsize>38</pixelsize>
     </fontdef>
 
+    <fontdef name="mysmallnarrowlabel" from="mysmallnarrow">
+        <color>#A0BFFF</color>
+    </fontdef>
+
     <!--
         <fontdef name="mysmallnarrowoutline" from="mysmallnarrow">
         <color>#F5F5F5</color>
