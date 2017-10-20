@@ -752,7 +752,7 @@
         </group>
 
         <group name="instructions" from="baseMsgGroup">
-            <area>40,825,450,235</area>
+            <area>35,100%-340,410,240</area>
             <textarea name="help2text" from="msgText" />
         </group>
 
