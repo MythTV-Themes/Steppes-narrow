@@ -1242,12 +1242,21 @@
                 <position>290,600</position>
             </spinbox>
 
+            <textarea name="autoextend_label" from="priority_label">
+                <position>10,690</position>
+                <value>Auto Extend:</value>
+            </textarea>
+
+            <spinbox name="autoextend" from="priority">
+                <position>290,690</position>
+            </spinbox>
+
             <checkbox name="ruleactive" from="basecheckbox">
-                <position>240,710</position>
+                <position>240,780</position>
             </checkbox>
 
             <textarea name="ruleactive_label" from="labelcheckbox">
-                <area>290,710,-20,70</area>
+                <area>290,780,-20,70</area>
                 <value>Recording Rule is Active</value>
             </textarea>
 
