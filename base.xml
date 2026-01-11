@@ -1930,20 +1930,6 @@
                         startdelay="15" returndelay="15"/>
                 <cutdown>no</cutdown>
             </textarea>
-<!--
-            <textarea name="syndicatedepisode" depends="!s00e00">
-                <area>20,100%-39,-210,32</area>
-                <font>mylabelfont</font>
-                <align>left,bottom</align>
-                <template>%|[SYNDICATEDEPISODE|]%</template>
-            </textarea>
-            <textarea name="parttotal">
-                <area>100%-200,100%-39,-20,32</area>
-                <align>right</align>
-                <font>mylabelfont</font>
-                <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
-            </textarea>
--->
         </group>
     </group>
 
@@ -2076,14 +2062,8 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textarea name="s00e00" from="filesize_str">
+        <textarea name="seasonepisode" from="filesize_str">
             <area>100%-255,35,125,35</area>
-        </textarea>
-
-        <textarea name="syndicatedepisode" from="filesize_str" depends="!s00e00">
-            <area>100%-255,35,125,35</area>
-            <font>mylabelfontnarrow</font>
-            <template>%|[SYNDICATEDEPISODE|]%</template>
         </textarea>
     </group>
 
